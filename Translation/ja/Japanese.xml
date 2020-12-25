@@ -664,6 +664,9 @@
 					<Name>CsprojCountError</Name>
 					<Value>1つの.csprojまたは.vbprojファイルである必要があります</Value>
 				</Data>
+				<Data Name="CsvImportDesc">
+					<Value>カンマ区切りファイル (CSV) ファイル から取り込む。</Value>
+				</Data>
 				<Data>
 					<Name>CsvTextFile</Name>
 					<Value>CSV / Text ファイル</Value>
@@ -891,6 +894,12 @@
 				<Data>
 					<Name>EditCmd</Name>
 					<Value>編集(&amp;E)</Value>
+				</Data>
+				<Data Name="EditEntries">
+					<Value>エントリ編集</Value>
+				</Data>
+				<Data Name="EditEntriesDesc">
+					<Value>選択されているすべてを編集</Value>
 				</Data>
 				<Data>
 					<Name>EditEntry</Name>
@@ -1988,6 +1997,9 @@
 					<Name>Name</Name>
 					<Value>名前</Value>
 				</Data>
+				<Data Name="MultipleValues">
+					<Value>複数の値</Value>
+				</Data>
 				<Data>
 					<Name>NativeLibUse</Name>
 					<Value>より早いキーの変換のためにネイティブライブラリを使用する</Value>
@@ -2800,6 +2812,9 @@
 					<Name>ShowMessageBox</Name>
 					<Value>メッセージボックスを表示</Value>
 				</Data>
+				<Data Name="ShowMore">
+					<Value>もっと表示</Value>
+				</Data>
 				<Data>
 					<Name>SimilarPasswords</Name>
 					<Value>同様のパスワード</Value>
@@ -2975,6 +2990,9 @@
 				<Data>
 					<Name>Time</Name>
 					<Value>時間</Value>
+				</Data>
+				<Data Name="TimeReq">
+					<Value>少々時間がかかります</Value>
 				</Data>
 				<Data>
 					<Name>TimerRestartOnActivity</Name>
