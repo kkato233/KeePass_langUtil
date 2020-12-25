@@ -39,4 +39,7 @@ xml2lngx ..\Translation\ja\Japanese.xml  Languages\Japanese.lngx
 
 KeePass.exe を起動して動作確認をする。
 
+KeePass は
+https://github.com/kkato233/KeePass
+でメンテナンス中
 
