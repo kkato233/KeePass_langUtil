@@ -2,7 +2,7 @@
 <Translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.44</ApplicationVersion>
+		<ApplicationVersion>2.45</ApplicationVersion>
 		<NameEnglish>Japanese</NameEnglish>
 		<NameNative>日本語</NameNative>
 		<Iso6391Code>ja</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>Kazuhiro Kato</AuthorName>
 		<AuthorContact>kato-k@ksysllc.co.jp</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>CC9A2C8C80637E47A2DF237318C87911</FileUuid>
-		<LastModified>2020-01-17 03:26:11Z</LastModified>
+		<FileUuid>B96F0BC2D879F347B3619CD794F6A53C</FileUuid>
+		<LastModified>2020-05-07 01:17:29Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -1897,6 +1897,10 @@
 					<Value>マスターパスワード</Value>
 				</Data>
 				<Data>
+					<Name>MasterPasswordConfirm</Name>
+					<Value>本当にこのマスターパスワードを使用しますか?</Value>
+				</Data>
+				<Data>
 					<Name>MasterPasswordMinLengthFailed</Name>
 					<Value>マスターパスワードは{PARAM}文字以上必要です!</Value>
 				</Data>
@@ -1907,6 +1911,14 @@
 				<Data>
 					<Name>MasterPasswordRmbWhileOpen</Name>
 					<Value>データベースを開いている間はマスターパスワードを保持する</Value>
+				</Data>
+				<Data>
+					<Name>MasterPasswordWeak</Name>
+					<Value>このマスターパスワードは脆弱です</Value>
+				</Data>
+				<Data>
+					<Name>MatchesRegEx</Name>
+					<Value>正規表現に一致</Value>
 				</Data>
 				<Data>
 					<Name>MaxAttachmentSize</Name>
@@ -5013,7 +5025,7 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:ALy/">
+				<Control Name="m_rtbText" BaseHash="v1:B88N">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5365,7 +5377,7 @@
 					<Text>トリガーシステムを有効にする(&amp;N)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSep" BaseHash="v1:qz1T">
+				<Control Name="m_lblSep" BaseHash="v1:ZDy1">
 					<Layout />
 				</Control>
 				<Control Name="m_lvTriggers" BaseHash="v1:iVnZ">
@@ -5696,18 +5708,18 @@
 					<Text>キャンセル</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCDDel" BaseHash="v1:Ttf+">
+				<Control Name="m_btnCDDel" BaseHash="v1:dKi0">
 					<Text>削除(&amp;D)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnIcon" BaseHash="v1:zelP">
+				<Control Name="m_btnIcon" BaseHash="v1:X/ZF">
 					<Layout />
 				</Control>
 				<Control Name="m_btnOK" BaseHash="v1:En1x">
 					<Text>OK</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbExpires" BaseHash="v1:WmWx">
+				<Control Name="m_cbExpires" BaseHash="v1:HQ7F">
 					<Text>有効期限(&amp;E):</Text>
 					<Layout />
 				</Control>
@@ -5717,7 +5729,7 @@
 				<Control Name="m_cmbEnableSearching" BaseHash="v1:uK/R">
 					<Layout />
 				</Control>
-				<Control Name="m_dtExpires" BaseHash="v1:nPUL">
+				<Control Name="m_dtExpires" BaseHash="v1:5gPi">
 					<Layout X="8%c" Width="-4%c" />
 				</Control>
 				<Control Name="m_lblAutoTypeDesc" BaseHash="v1:/1IG">
@@ -5732,11 +5744,11 @@
 					<Text>このグループのエントリーを検索(&amp;S):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblIcon" BaseHash="v1:hgGd">
+				<Control Name="m_lblIcon" BaseHash="v1:3kZi">
 					<Text>アイコン(&amp;I):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblName" BaseHash="v1:gdWZ">
+				<Control Name="m_lblName" BaseHash="v1:vXjZ">
 					<Text>名前(&amp;N):</Text>
 					<Layout />
 				</Control>
@@ -5744,7 +5756,11 @@
 					<Text>備考はグループのツールチップに表示されます</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lvCustomData" BaseHash="v1:Wz68">
+				<Control Name="m_lblUuid" BaseHash="v1:rQE2">
+					<Text>&amp;UUID:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lvCustomData" BaseHash="v1:Tr+a">
 					<Layout />
 				</Control>
 				<Control Name="m_rbAutoTypeInherit" BaseHash="v1:csnR">
@@ -5781,10 +5797,13 @@
 				<Control Name="m_tbDefaultAutoTypeSeq" BaseHash="v1:Ph4r">
 					<Layout />
 				</Control>
-				<Control Name="m_tbName" BaseHash="v1:Idm6">
+				<Control Name="m_tbName" BaseHash="v1:YUSJ">
 					<Layout />
 				</Control>
-				<Control Name="m_tbNotes" BaseHash="v1:nHIG">
+				<Control Name="m_tbNotes" BaseHash="v1:RkRc">
+					<Layout />
+				</Control>
+				<Control Name="m_tbUuid" BaseHash="v1:5n63">
 					<Layout />
 				</Control>
 			</ChildControls>
