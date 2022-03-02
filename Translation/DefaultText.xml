@@ -52,9 +52,6 @@
 		<Data Name="All">
 			<Value>All</Value>
 		</Data>
-		<Data Name="AllEntriesTitle">
-			<Value>All Entries</Value>
-		</Data>
 		<Data Name="AllFiles">
 			<Value>All Files</Value>
 		</Data>
@@ -84,6 +81,9 @@
 		</Data>
 		<Data Name="AskContinue">
 			<Value>Do you want to continue?</Value>
+		</Data>
+		<Data Name="AssociationsLower">
+			<Value>association(s)</Value>
 		</Data>
 		<Data Name="Asterisks">
 			<Value>Asterisks</Value>
@@ -244,6 +244,9 @@
 		<Data Name="Bits">
 			<Value>Bits</Value>
 		</Data>
+		<Data Name="BitsA">
+			<Value>{PARAM}-bit</Value>
+		</Data>
 		<Data Name="BitsEx">
 			<Value>{PARAM} bits</Value>
 		</Data>
@@ -284,13 +287,13 @@
 			<Value>Cancel</Value>
 		</Data>
 		<Data Name="CannotMoveEntriesBcsGroup">
-			<Value>Cannot move entries because they aren't stored in the same group.</Value>
+			<Value>Cannot move entries because they are not stored in the same group.</Value>
 		</Data>
 		<Data Name="ChangeMasterKey">
 			<Value>Change Master Key</Value>
 		</Data>
 		<Data Name="ChangeMasterKeyIntroShort">
-			<Value>You are changing the composite master key for the currently open database.</Value>
+			<Value>You are changing the master key for the currently open database.</Value>
 		</Data>
 		<Data Name="CharsAbbr">
 			<Value>ch.</Value>
@@ -373,6 +376,9 @@
 		<Data Name="Comparison">
 			<Value>Comparison</Value>
 		</Data>
+		<Data Name="CompatWithOldVer">
+			<Value>compatible with older KeePass versions/ports</Value>
+		</Data>
 		<Data Name="Component">
 			<Value>Component</Value>
 		</Data>
@@ -385,8 +391,11 @@
 		<Data Name="ConfigAffectUser">
 			<Value>Changes to the configuration/policy will only affect you. Policy flags that are enforced by the administrator are reset after restarting KeePass.</Value>
 		</Data>
-		<Data Name="ConfigSaveFailed">
-			<Value>Failed to save the configuration.</Value>
+		<Data Name="ConfigError">
+			<Value>Configuration error</Value>
+		</Data>
+		<Data Name="ConfigOverwriteBackup">
+			<Value>KeePass will maybe overwrite the configuration file. Therefore, a backup has been created.</Value>
 		</Data>
 		<Data Name="ConfigureAutoType">
 			<Value>Configure Auto-Type</Value>
@@ -412,8 +421,11 @@
 		<Data Name="ConfigureKeystrokeSeqDesc">
 			<Value>Define a default keystroke sequence.</Value>
 		</Data>
-		<Data Name="ConfigureOnNewDatabase2">
-			<Value>Create New Database - Step 3</Value>
+		<Data Name="ConfigureOnNewDatabase3">
+			<Value>Configure New Database</Value>
+		</Data>
+		<Data Name="ConsiderDashesEq">
+			<Value>Consider similar dashes as identical</Value>
 		</Data>
 		<Data Name="Contact">
 			<Value>Contact</Value>
@@ -432,6 +444,9 @@
 		</Data>
 		<Data Name="CopyLink">
 			<Value>Copy Link</Value>
+		</Data>
+		<Data Name="CopyObject">
+			<Value>Copy {PARAM}</Value>
 		</Data>
 		<Data Name="CopyOfItem">
 			<Value>Copy</Value>
@@ -461,7 +476,7 @@
 			<Value>Count</Value>
 		</Data>
 		<Data Name="CreateMasterKey">
-			<Value>Create Composite Master Key</Value>
+			<Value>Create Master Key</Value>
 		</Data>
 		<Data Name="CreateNewDatabase2">
 			<Value>Create New Database</Value>
@@ -556,6 +571,18 @@
 		<Data Name="DatabaseNamePrompt">
 			<Value>Enter a name for the database or leave it empty.</Value>
 		</Data>
+		<Data Name="DatabaseOpenUnknownVersionAsk">
+			<Value>Show confirmation dialog when opening a database file whose minor format version is unknown</Value>
+		</Data>
+		<Data Name="DatabaseOpenUnknownVersionInfo">
+			<Value>The format version of the selected database file is higher than the one supported by the currently running KeePass instance. Most likely, the database file has been created by a newer KeePass version. KeePass can try to open the database file, but certain data may be lost.</Value>
+		</Data>
+		<Data Name="DatabaseOpenUnknownVersionQ">
+			<Value>Do you want to try opening the database file, possibly losing certain data?</Value>
+		</Data>
+		<Data Name="DatabaseOpenUnknownVersionRec">
+			<Value>In order to avoid data loss, it is recommended to install/use the latest version of KeePass.</Value>
+		</Data>
 		<Data Name="DatabaseSettings">
 			<Value>Database Settings</Value>
 		</Data>
@@ -612,6 +639,9 @@
 		</Data>
 		<Data Name="Description">
 			<Value>Description</Value>
+		</Data>
+		<Data Name="Destination">
+			<Value>Destination</Value>
 		</Data>
 		<Data Name="Details">
 			<Value>Details</Value>
@@ -907,6 +937,9 @@
 		<Data Name="FileOrUrl">
 			<Value>File/URL</Value>
 		</Data>
+		<Data Name="FilePathFullReq">
+			<Value>Please specify the full path to the file.</Value>
+		</Data>
 		<Data Name="Files">
 			<Value>Files</Value>
 		</Data>
@@ -1045,21 +1078,6 @@
 		<Data Name="GenericCsvImporter">
 			<Value>Generic CSV Importer</Value>
 		</Data>
-		<Data Name="GenProfileRemove">
-			<Value>Remove selected profile</Value>
-		</Data>
-		<Data Name="GenProfileRemoveDesc">
-			<Value>Remove the currently selected profile.</Value>
-		</Data>
-		<Data Name="GenProfileSave">
-			<Value>Save as Profile</Value>
-		</Data>
-		<Data Name="GenProfileSaveDesc">
-			<Value>Save current settings as a profile.</Value>
-		</Data>
-		<Data Name="GenProfileSaveDescLong">
-			<Value>Please enter a name for the new password generator profile, or select an existing profile name to overwrite it:</Value>
-		</Data>
 		<Data Name="GenPwAccept">
 			<Value>Accept this password?</Value>
 		</Data>
@@ -1156,9 +1174,6 @@
 		<Data Name="ImportFileDesc">
 			<Value>Import an external file.</Value>
 		</Data>
-		<Data Name="ImportFilesPrompt">
-			<Value>Files to be imported:</Value>
-		</Data>
 		<Data Name="ImportFileTitle">
 			<Value>Import File/Data</Value>
 		</Data>
@@ -1185,6 +1200,9 @@
 		</Data>
 		<Data Name="IncompatibleWithSorting">
 			<Value>incompatible with sorting</Value>
+		</Data>
+		<Data Name="Inherited">
+			<Value>Inherited</Value>
 		</Data>
 		<Data Name="InheritSettingFromParent">
 			<Value>Inherit setting from parent</Value>
@@ -1223,7 +1241,7 @@
 			<Value>The specified user name / password combination is invalid.</Value>
 		</Data>
 		<Data Name="IOConnection">
-			<Value>IO Connection</Value>
+			<Value>I/O Connection</Value>
 		</Data>
 		<Data Name="IOConnectionLong">
 			<Value>File Input/Output Connections</Value>
@@ -1285,20 +1303,62 @@
 		<Data Name="KeyFile">
 			<Value>Key file</Value>
 		</Data>
+		<Data Name="KeyFileBackup">
+			<Value>Key File Backup</Value>
+		</Data>
+		<Data Name="KeyFileContent">
+			<Value>Key file content</Value>
+		</Data>
 		<Data Name="KeyFileCreate">
 			<Value>Create a new key file</Value>
+		</Data>
+		<Data Name="KeyFileCreateTitle">
+			<Value>Create Key File</Value>
 		</Data>
 		<Data Name="KeyFileError">
 			<Value>The specified key file could not be found or its format is unknown.</Value>
 		</Data>
+		<Data Name="KeyFileFromBackup">
+			<Value>There are two ways to recreate a key file from this backup</Value>
+		</Data>
+		<Data Name="KeyFileFromBackupF2">
+			<Value>Start KeePass, click on 'Tools' -&gt; 'Advanced Tools' -&gt; 'Recreate Key File From Printed Backup', and fill out the form that is displayed on the screen.</Value>
+		</Data>
+		<Data Name="KeyFileFromBackupT">
+			<Value>Alternatively, start a text editor (e.g. Notepad), type the content above, and save it to a new file (with file extension 'keyx').</Value>
+		</Data>
+		<Data Name="KeyFileGenHint">
+			<Value>You can generate an XML key file in the master key creation dialog.</Value>
+		</Data>
+		<Data Name="KeyFileNoXml">
+			<Value>The file is not an XML key file.</Value>
+		</Data>
+		<Data Name="KeyFilePrintAlso">
+			<Value>Also print a key file backup</Value>
+		</Data>
+		<Data Name="KeyFilePrintLocal">
+			<Value>For security reasons, it is recommended to print a key file backup on a local printer, not over a network.</Value>
+		</Data>
+		<Data Name="KeyFilePrintReqXml">
+			<Value>Printing a key file backup is supported only for XML key files.</Value>
+		</Data>
 		<Data Name="KeyFiles">
 			<Value>Key Files</Value>
+		</Data>
+		<Data Name="KeyFileSafe">
+			<Value>KeyFile</Value>
 		</Data>
 		<Data Name="KeyFileSelect">
 			<Value>Select key file manually</Value>
 		</Data>
+		<Data Name="KeyFileUseAnywayQ">
+			<Value>Do you want to use the file as key file anyway?</Value>
+		</Data>
 		<Data Name="KeyFileUseExisting">
-			<Value>Use an existing file as key file</Value>
+			<Value>Use an existing key file</Value>
+		</Data>
+		<Data Name="KeyProvExclusive">
+			<Value>The selected key provider disallows combining it with any other master key component.</Value>
 		</Data>
 		<Data Name="KeyProvider">
 			<Value>Key provider</Value>
@@ -1380,6 +1440,9 @@
 		</Data>
 		<Data Name="LockWorkspace">
 			<Value>Lock workspace</Value>
+		</Data>
+		<Data Name="MacAddress">
+			<Value>MAC Address</Value>
 		</Data>
 		<Data Name="MainInstruction">
 			<Value>Main instruction</Value>
@@ -1480,11 +1543,23 @@
 		<Data Name="More">
 			<Value>More</Value>
 		</Data>
+		<Data Name="MoreAnd">
+			<Value>and {PARAM} more</Value>
+		</Data>
 		<Data Name="MoreEntries">
 			<Value>{PARAM} more entries</Value>
 		</Data>
 		<Data Name="MoreInfo">
 			<Value>More information</Value>
+		</Data>
+		<Data Name="MoveDown">
+			<Value>Move down</Value>
+		</Data>
+		<Data Name="MoveToPreviousParentGroup">
+			<Value>Move to &amp;Previous Parent Group</Value>
+		</Data>
+		<Data Name="MoveUp">
+			<Value>Move up</Value>
 		</Data>
 		<Data Name="MultipleValues">
 			<Value>Multiple values</Value>
@@ -1625,7 +1700,7 @@
 			<Value>Open with {PARAM}</Value>
 		</Data>
 		<Data Name="OptimizeForScreenReader">
-			<Value>Optimize for screen reader (only enable if you're using a screen reader)</Value>
+			<Value>Optimize for screen reader (activate only if you are using a screen reader)</Value>
 		</Data>
 		<Data Name="OptionReqOn">
 			<Value>For this operation, the following option must be turned on:</Value>
@@ -1704,6 +1779,9 @@
 		</Data>
 		<Data Name="Paste">
 			<Value>Paste</Value>
+		</Data>
+		<Data Name="Path">
+			<Value>Path</Value>
 		</Data>
 		<Data Name="PerformAutoType">
 			<Value>Perform Auto-&amp;Type</Value>
@@ -1840,8 +1918,29 @@
 		<Data Name="Professional">
 			<Value>Professional</Value>
 		</Data>
+		<Data Name="ProfileDelete">
+			<Value>Delete Profile</Value>
+		</Data>
+		<Data Name="ProfileDeleteDesc">
+			<Value>Delete the selected profile.</Value>
+		</Data>
+		<Data Name="ProfileSave">
+			<Value>Save as Profile</Value>
+		</Data>
+		<Data Name="ProfileSaveDesc">
+			<Value>Save the current settings as a profile.</Value>
+		</Data>
+		<Data Name="ProfileSavePrompt">
+			<Value>Enter a name for the new profile or select an existing profile to overwrite it:</Value>
+		</Data>
+		<Data Name="PwGenOpen">
+			<Value>Open Password Generator...</Value>
+		</Data>
 		<Data Name="Quality">
 			<Value>Quality</Value>
+		</Data>
+		<Data Name="QualityCheckToggle">
+			<Value>Enable/disable quality estimation for this entry (here, in password quality reports, ...)</Value>
 		</Data>
 		<Data Name="Quick">
 			<Value>Quick</Value>
@@ -1860,9 +1959,6 @@
 		</Data>
 		<Data Name="QuickSearchTb">
 			<Value>Quick Search (Toolbar)</Value>
-		</Data>
-		<Data Name="RandomMacAddress">
-			<Value>Random MAC Address</Value>
 		</Data>
 		<Data Name="Ready">
 			<Value>Ready.</Value>
@@ -1887,6 +1983,9 @@
 		</Data>
 		<Data Name="RecycleGroupConfirm">
 			<Value>Are you sure you want to move the selected group to the recycle bin?</Value>
+		</Data>
+		<Data Name="RecycleMoveInfo">
+			<Value>At least one of the selected entries/groups will be moved into/within the recycle bin.</Value>
 		</Data>
 		<Data Name="RecycleShowConfirm">
 			<Value>Show confirmation dialog when moving entries/groups to the recycle bin</Value>
@@ -1935,6 +2034,9 @@
 		</Data>
 		<Data Name="RestartKeePassQuestion">
 			<Value>Do you wish to restart KeePass now?</Value>
+		</Data>
+		<Data Name="Restore">
+			<Value>Restore</Value>
 		</Data>
 		<Data Name="Retry">
 			<Value>Retry</Value>
@@ -2029,6 +2131,12 @@
 		<Data Name="SecDeskFileDialogHint">
 			<Value>Note: KeePass shows this simple file browser dialog, because standard Windows file dialogs cannot be shown on the secure desktop for security reasons.</Value>
 		</Data>
+		<Data Name="SecDeskOpContinueOnNormal">
+			<Value>KeePass will cancel the current dialog and switch to the normal desktop. The requested operation will then be performed on the normal desktop.</Value>
+		</Data>
+		<Data Name="SecDeskOpUnsupported">
+			<Value>This operation cannot be performed on the secure desktop.</Value>
+		</Data>
 		<Data Name="SecDeskOtherSwitched">
 			<Value>An application has switched from the secure desktop to a different desktop.</Value>
 		</Data>
@@ -2049,6 +2157,9 @@
 		</Data>
 		<Data Name="SelectedColumn">
 			<Value>Selected column</Value>
+		</Data>
+		<Data Name="SelectedGroup">
+			<Value>Selected Group</Value>
 		</Data>
 		<Data Name="SelectedLower">
 			<Value>selected</Value>
@@ -2077,6 +2188,9 @@
 		<Data Name="Sequence">
 			<Value>Sequence</Value>
 		</Data>
+		<Data Name="Sequences">
+			<Value>Sequences</Value>
+		</Data>
 		<Data Name="ShowAdvAutoTypeCommands">
 			<Value>Show additional auto-type menu commands</Value>
 		</Data>
@@ -2104,6 +2218,9 @@
 		<Data Name="ShowMore">
 			<Value>Show more</Value>
 		</Data>
+		<Data Name="ShowWithFileManager">
+			<Value>&amp;Show with File Manager</Value>
+		</Data>
 		<Data Name="SimilarPasswords">
 			<Value>Similar Passwords</Value>
 		</Data>
@@ -2127,6 +2244,9 @@
 		</Data>
 		<Data Name="SoonToExpireEntries">
 			<Value>Expired Entries and Entries That Will Expire Soon</Value>
+		</Data>
+		<Data Name="Source">
+			<Value>Source</Value>
 		</Data>
 		<Data Name="SpecialKeys">
 			<Value>Special Keys</Value>
@@ -2180,7 +2300,7 @@
 			<Value>Synchronizing database file</Value>
 		</Data>
 		<Data Name="SynchronizingHint">
-			<Value>Make sure that the two databases use the same composite master key. This is required for synchronization.</Value>
+			<Value>Make sure that the two databases use the same master key. This is required for a synchronization.</Value>
 		</Data>
 		<Data Name="SyncSuccess">
 			<Value>Synchronization completed successfully.</Value>
@@ -2202,6 +2322,12 @@
 		</Data>
 		<Data Name="Tags">
 			<Value>Tags</Value>
+		</Data>
+		<Data Name="TagsAddRemove">
+			<Value>Add/remove tags</Value>
+		</Data>
+		<Data Name="TagsInheritedCount">
+			<Value>{PARAM} inherited tag(s)</Value>
 		</Data>
 		<Data Name="TagsNotFound">
 			<Value>No tags found</Value>
@@ -2560,6 +2686,9 @@
 		<Data Name="EncDataTooLarge">
 			<Value>The data is too large to be encrypted/decrypted securely using {PARAM}.</Value>
 		</Data>
+		<Data Name="EntryLower">
+			<Value>entry</Value>
+		</Data>
 		<Data Name="ErrorInClipboard">
 			<Value>An extended error report has been copied to the clipboard.</Value>
 		</Data>
@@ -2599,8 +2728,8 @@
 		<Data Name="FileSaveCorruptionWarning">
 			<Value>The target file might be corrupted. Please try saving again. If that fails, save the database to a different location.</Value>
 		</Data>
-		<Data Name="FileSaveFailed">
-			<Value>Failed to save the current database to the specified location!</Value>
+		<Data Name="FileSaveFailed2">
+			<Value>Failed to save to the specified file!</Value>
 		</Data>
 		<Data Name="FileSigInvalid">
 			<Value>The file signature is invalid. Either the file isn't a KeePass database file at all or it is corrupted.</Value>
@@ -2612,7 +2741,7 @@
 			<Value>The file is compressed using an unknown compression algorithm!</Value>
 		</Data>
 		<Data Name="FileVersionUnsupported">
-			<Value>The file version is unsupported.</Value>
+			<Value>The file format version is unsupported.</Value>
 		</Data>
 		<Data Name="FinalKeyCreationFailed">
 			<Value>Failed to create the final encryption/decryption key!</Value>
@@ -2623,11 +2752,14 @@
 		<Data Name="General">
 			<Value>General</Value>
 		</Data>
+		<Data Name="GroupLower">
+			<Value>group</Value>
+		</Data>
 		<Data Name="InvalidCompositeKey">
-			<Value>The composite key is invalid!</Value>
+			<Value>The master key is invalid!</Value>
 		</Data>
 		<Data Name="InvalidCompositeKeyHint">
-			<Value>Make sure the composite key is correct and try again.</Value>
+			<Value>Make sure that the master key is correct and try it again.</Value>
 		</Data>
 		<Data Name="InvalidDataWhileDecoding">
 			<Value>Found invalid data while decoding.</Value>
@@ -2640,6 +2772,9 @@
 		</Data>
 		<Data Name="KeyFileDbSel">
 			<Value>Database files cannot be used as key files.</Value>
+		</Data>
+		<Data Name="KeyHashMismatch">
+			<Value>The key and the hash do not match, i.e. the key or the hash is invalid.</Value>
 		</Data>
 		<Data Name="MasterSeedLengthInvalid">
 			<Value>The length of the master key seed is invalid!</Value>
