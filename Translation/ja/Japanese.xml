@@ -10,8 +10,8 @@
 		<AuthorName>Kazuhiro Kato</AuthorName>
 		<AuthorContact>kato-k@ksysllc.co.jp</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>1DC61E75E43E4946919F75A24E9EE68D</FileUuid>
-		<LastModified>2022-03-02 22:14:00Z</LastModified>
+		<FileUuid>EA9DD67DF0BF6B429F4B6D288F8F43D6</FileUuid>
+		<LastModified>2022-03-02 14:23:28Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -4811,11 +4811,11 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.CsvImportForm">
-			<Window Name="" BaseHash="v1:ZtMD">
+			<Window Name="" BaseHash="v1:ICkU">
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:WZpQ">
+				<Control Name="m_btnCancel" BaseHash="v1:mXxi">
 					<Text>キャンセル</Text>
 					<Layout />
 				</Control>
@@ -4823,29 +4823,29 @@
 					<Text>追加(&amp;A)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnFieldDel" BaseHash="v1:ZL4F">
+				<Control Name="m_btnFieldDel" BaseHash="v1:tE/f">
 					<Text>削除(&amp;D)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnFieldMoveDown" BaseHash="v1:HG53">
+				<Control Name="m_btnFieldMoveDown" BaseHash="v1:/odj">
 					<Layout />
 				</Control>
-				<Control Name="m_btnFieldMoveUp" BaseHash="v1:Kekk">
+				<Control Name="m_btnFieldMoveUp" BaseHash="v1:QVAx">
 					<Layout />
 				</Control>
-				<Control Name="m_btnHelp" BaseHash="v1:YlXY">
+				<Control Name="m_btnHelp" BaseHash="v1:s4gp">
 					<Text>ヘルプ(&amp;H)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:rXQI">
+				<Control Name="m_btnOK" BaseHash="v1:0yJq">
 					<Text>完了(&amp;F)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnTabBack" BaseHash="v1:ek7P">
+				<Control Name="m_btnTabBack" BaseHash="v1:MIug">
 					<Text>&lt; 戻る(&amp;B)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnTabNext" BaseHash="v1:vIRu">
+				<Control Name="m_btnTabNext" BaseHash="v1:frGp">
 					<Text>次(&amp;N) &gt;</Text>
 					<Layout />
 				</Control>
@@ -4857,7 +4857,7 @@
 					<Text>最初の行を無視(&amp;I)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbMergeGroups" BaseHash="v1:P8Jf">
+				<Control Name="m_cbMergeGroups" BaseHash="v1:jpJq">
 					<Text>インポートしたグループを既存のデータベースのグループにマージ(&amp;M)</Text>
 					<Layout />
 				</Control>
@@ -4865,8 +4865,8 @@
 					<Text>フィールド内の初めと終わりの空白文字を除く(&amp;W)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cmbEnc" BaseHash="v1:DSM1">
-					<Layout X="28%c" />
+				<Control Name="m_cmbEnc" BaseHash="v1:iN3e">
+					<Layout X="50%c" />
 				</Control>
 				<Control Name="m_cmbFieldFormat" BaseHash="v1:sysh">
 					<Layout />
@@ -4874,7 +4874,7 @@
 				<Control Name="m_cmbFieldSep" BaseHash="v1:x1TQ">
 					<Layout X="20%c" />
 				</Control>
-				<Control Name="m_cmbFieldType" BaseHash="v1:SOqL">
+				<Control Name="m_cmbFieldType" BaseHash="v1:cjcr">
 					<Layout />
 				</Control>
 				<Control Name="m_cmbRecSep" BaseHash="v1:MWgg">
@@ -4883,23 +4883,23 @@
 				<Control Name="m_cmbTextQual" BaseHash="v1:5ari">
 					<Layout X="20%c" />
 				</Control>
-				<Control Name="m_grpFieldAdd" BaseHash="v1:cBBG">
+				<Control Name="m_grpFieldAdd" BaseHash="v1:+VSR">
 					<Text>フィールド追加</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_grpSem" BaseHash="v1:+GTZ">
+				<Control Name="m_grpSem" BaseHash="v1:QnD1">
 					<Text>意味</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_grpSyntax" BaseHash="v1:jB6T">
+				<Control Name="m_grpSyntax" BaseHash="v1:WyPv">
 					<Text>文法</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEnc" BaseHash="v1:qsUf">
+				<Control Name="m_lblEnc" BaseHash="v1:LH2Z">
 					<Text>テキストエンコーディング(&amp;E):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEncPreview" BaseHash="v1:F9hI">
+				<Control Name="m_lblEncPreview" BaseHash="v1:y1rV">
 					<Text>テキストプレビュー(&amp;T):</Text>
 					<Layout />
 				</Control>
@@ -4934,20 +4934,20 @@
 					<Text>ヘルプ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lvFields" BaseHash="v1:7gsH">
+				<Control Name="m_lvFields" BaseHash="v1:fcdH">
 					<Layout />
 				</Control>
-				<Control Name="m_lvImportPreview" BaseHash="v1:y9/A">
+				<Control Name="m_lvImportPreview" BaseHash="v1:WPgc">
 					<Layout />
 				</Control>
-				<Control Name="m_rtbEncPreview" BaseHash="v1:g1pH">
+				<Control Name="m_rtbEncPreview" BaseHash="v1:BT3p">
 					<Layout />
 				</Control>
 				<Control Name="m_tabEnc" BaseHash="v1:sWpe">
 					<Text>エンコーディング</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabMain" BaseHash="v1:zbpR">
+				<Control Name="m_tabMain" BaseHash="v1:dUSx">
 					<Layout />
 				</Control>
 				<Control Name="m_tabPreview" BaseHash="v1:0SHn">
@@ -4958,7 +4958,7 @@
 					<Text>構造</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tbFieldName" BaseHash="v1:tr6l">
+				<Control Name="m_tbFieldName" BaseHash="v1:eFMs">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -4992,7 +4992,7 @@
 					<Text>エントリーの履歴</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblDeleteHistoryEntries" BaseHash="v1:fjWW">
+				<Control Name="m_lblDeleteHistoryEntries" BaseHash="v1:BBnx">
 					<Text>履歴エントリー(エントリーダイアログの「履歴」タブページに表示される)を削除できるようになりました。これにより、データベースのサイズが少し小さくなります</Text>
 					<Layout />
 				</Control>
@@ -5004,7 +5004,7 @@
 					<Text>警告! この情報や、削除済みのグループ、エンティティを削除すると、現在のデータベースから別のデータベースに同期した際に、削除したものが復活する場合があります</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEntryHistoryWarning" BaseHash="v1:JpnN">
+				<Control Name="m_lblEntryHistoryWarning" BaseHash="v1:r7Gf">
 					<Text>「削除」ボタンを押すと指定された日数より古い全ての履歴エントリーが削除されます。この操作を行うと元に戻すことができません</Text>
 					<Layout />
 				</Control>
@@ -5195,7 +5195,7 @@
 					<Text>反復が多いほど、辞書攻撃や推測攻撃は難しくなりますが、データベースの読み込み/保存にも時間がかかります。</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblKdfIntro" BaseHash="v1:/9IL">
+				<Control Name="m_lblKdfIntro" BaseHash="v1:ONZx">
 					<Text>マスターキーは、キー導出関数を使用して変換されます。これにより、作業要素が追加され、辞書攻撃や推測攻撃が難しくなります。</Text>
 					<Layout />
 				</Control>
@@ -5298,7 +5298,7 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:B88N">
+				<Control Name="m_rtbText" BaseHash="v1:eWtF">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5308,7 +5308,7 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:uqCV">
+				<Control Name="m_rtbText" BaseHash="v1:cvat">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5372,7 +5372,7 @@
 				<Control Name="m_cmbActions" BaseHash="v1:0613">
 					<Layout />
 				</Control>
-				<Control Name="m_lblAction" BaseHash="v1:9OA5">
+				<Control Name="m_lblAction" BaseHash="v1:1lt0">
 					<Text>アクション(&amp;A):</Text>
 					<Layout />
 				</Control>
@@ -5408,7 +5408,7 @@
 				<Control Name="m_cmbConditions" BaseHash="v1:FCjQ">
 					<Layout />
 				</Control>
-				<Control Name="m_lblCondition" BaseHash="v1:BEFn">
+				<Control Name="m_lblCondition" BaseHash="v1:9gnO">
 					<Text>条件(&amp;C):</Text>
 					<Layout />
 				</Control>
@@ -5440,7 +5440,7 @@
 				<Control Name="m_cmbEvents" BaseHash="v1:0613">
 					<Layout />
 				</Control>
-				<Control Name="m_lblEvent" BaseHash="v1:V+Vj">
+				<Control Name="m_lblEvent" BaseHash="v1:Eoek">
 					<Text>イベント(&amp;E):</Text>
 					<Layout />
 				</Control>
@@ -5659,20 +5659,20 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.EditAutoTypeItemForm">
-			<Window Name="" BaseHash="v1:4UrV">
+			<Window Name="" BaseHash="v1:yhnh">
 				<Text>自動入力アイテムの編集</Text>
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:WhNd">
+				<Control Name="m_btnCancel" BaseHash="v1:2R/q">
 					<Text>キャンセル</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnHelp" BaseHash="v1:x+XM">
+				<Control Name="m_btnHelp" BaseHash="v1:9jbf">
 					<Text>ヘルプ(&amp;H)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:G+WA">
+				<Control Name="m_btnOK" BaseHash="v1:BTp4">
 					<Text>OK</Text>
 					<Layout />
 				</Control>
@@ -5687,7 +5687,7 @@
 					<Text>右側のドロップダウンボタンを押すと、現在開いているウインドウの一覧が表示されます</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:M8rh">
+				<Control Name="m_lblSeparator" BaseHash="v1:9+PW">
 					<Layout />
 				</Control>
 				<Control Name="m_lblTargetWindow" BaseHash="v1:/f8g">
@@ -5709,7 +5709,7 @@
 					<Text>このエントリーの標準のキーストロークを使用(&amp;D)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rtbPlaceholders" BaseHash="v1:rmZY">
+				<Control Name="m_rtbPlaceholders" BaseHash="v1:tTGW">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5735,7 +5735,7 @@
 					<Text>OK</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbProtect" BaseHash="v1:9Y12">
+				<Control Name="m_cbProtect" BaseHash="v1:wwmU">
 					<Text>プロセスメモリ内の値を保護する(&amp;P)</Text>
 					<Layout />
 				</Control>
@@ -6543,13 +6543,13 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbKeyFile" BaseHash="v1:GB/G">
-					<Layout />
+					<Layout X="10%c" Width="-5%c" />
 				</Control>
 				<Control Name="m_lblSeparator" BaseHash="v1:+OLd">
 					<Layout />
 				</Control>
 				<Control Name="m_tbPassword" BaseHash="v1:wLUo">
-					<Layout />
+					<Layout X="10%c" Width="-5%c" />
 				</Control>
 			</ChildControls>
 		</Form>
