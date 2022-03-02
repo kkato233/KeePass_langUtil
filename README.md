@@ -74,18 +74,27 @@ https://keepass.info/translations.html のページの下の方にある
 
 lngx2xml や xml2lngx は 該当するバージョンの exe や dll が必要。
 
-KeePass を ビルドして生成された
-```
-KeePass.exe
-KeePassLib.dll
-```
-ファイルを `libs` フォルダに入れてコミットする。
+まず `KeePass` を 最新版でビルドする。
 
+次に 
 
 `KeePass_langUtil.sln` を Visual Studio で開いてビルドする。
 
 ビルド結果の build フォルダの生成物は コミットする。
 
+動作確認 新しい言語定義を `build\Languages\Japanese.lngx` に格納して
 
+```
+cd build
+lngx2xml.exe build\Languages\Japanese.lngx temp.xml
+xml2lngx.exe temp.xml temp2.lngx
+lngx2xml.exe temp2.lngx temp2.xml
+```
+
+temp.xml と temp2.xml が同一であれば 動作確認OK.
+
+バージョンが違うと Name の部分が未設定の XML が生成される。
+
+このファイルを使うと正しく日本語化できない。
 
 
