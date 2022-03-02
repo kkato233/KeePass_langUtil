@@ -27,7 +27,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\build\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KeePassLib\KeePassLib.csproj">
+    <ProjectReference Include="..\..\KeePass\KeePassLib\KeePassLib.csproj">
       <Project>{53573e4e-33cb-4fdb-8698-c95f5e40e7f3}</Project>
       <Name>KeePassLib</Name>
     </ProjectReference>
