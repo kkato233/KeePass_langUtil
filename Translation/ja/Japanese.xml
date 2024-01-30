@@ -2,7 +2,7 @@
 <Translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.50</ApplicationVersion>
+		<ApplicationVersion>2.55</ApplicationVersion>
 		<NameEnglish>Japanese</NameEnglish>
 		<NameNative>日本語</NameNative>
 		<Iso6391Code>ja</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>Kazuhiro Kato</AuthorName>
 		<AuthorContact>kato-k@ksysllc.co.jp</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>EA9DD67DF0BF6B429F4B6D288F8F43D6</FileUuid>
-		<LastModified>2022-03-02 14:23:28Z</LastModified>
+		<FileUuid>0F738A6AADB8634EAE4101CB78ADA498</FileUuid>
+		<LastModified>2024-01-30 17:30:23Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -61,6 +61,10 @@
 					<Value>新しい文字列フィールドを現在のエントリーに追加します</Value>
 				</Data>
 				<Data>
+					<Name>AdminPassword</Name>
+					<Value>管理者パスワード</Value>
+				</Data>
+				<Data>
 					<Name>Advanced</Name>
 					<Value>高度</Value>
 				</Data>
@@ -85,6 +89,10 @@
 					<Value>全て</Value>
 				</Data>
 				<Data>
+					<Name>AllDataInclOrg</Name>
+					<Value>全てのデータ(組織データを含む)</Value>
+				</Data>
+				<Data>
 					<Name>AllFiles</Name>
 					<Value>全てのファイル</Value>
 				</Data>
@@ -93,8 +101,12 @@
 					<Value>対応した全てのファイル</Value>
 				</Data>
 				<Data>
-					<Name>AlternatingBgColors</Name>
-					<Value>アイテムの色を1行ごとに変える</Value>
+					<Name>AllUsers</Name>
+					<Value>全てのユーザ</Value>
+				</Data>
+				<Data>
+					<Name>AlwaysP</Name>
+					<Value>常時 {PARAM}</Value>
 				</Data>
 				<Data>
 					<Name>Application</Name>
@@ -209,6 +221,10 @@
 					<Value>新しいエントリーに自動的にパスワードを生成します</Value>
 				</Data>
 				<Data>
+					<Name>Automatic</Name>
+					<Value>自動的</Value>
+				</Data>
+				<Data>
 					<Name>AutoRememberOpenLastFile</Name>
 					<Value>最後に使用したデータベースを記憶して開始時に自動的に開きます</Value>
 				</Data>
@@ -227,6 +243,14 @@
 				<Data>
 					<Name>AutoShowSoonToExpireEntries</Name>
 					<Value>まもなく有効期限切れのエントリーを表示 (もしあれば)</Value>
+				</Data>
+				<Data>
+					<Name>AutoSortDeactivateQ</Name>
+					<Value>自動ソートを解除しますか?</Value>
+				</Data>
+				<Data>
+					<Name>AutoSortNoRearrange</Name>
+					<Value>現在、自動ソートがかかっているため、エントリーの並べ替えはできません。</Value>
 				</Data>
 				<Data>
 					<Name>AutoType</Name>
@@ -349,6 +373,10 @@
 					<Value>{PARAM} ビット</Value>
 				</Data>
 				<Data>
+					<Name>Blue</Name>
+					<Value>青</Value>
+				</Data>
+				<Data>
 					<Name>Bold</Name>
 					<Value>太字</Value>
 				</Data>
@@ -405,10 +433,6 @@
 					<Value>マスターキーの変更</Value>
 				</Data>
 				<Data>
-					<Name>ChangeMasterKeyIntroShort</Name>
-					<Value>現在開いているデータベースの複合マスターキーを変更しようとしています</Value>
-				</Data>
-				<Data>
 					<Name>CharsAbbr</Name>
 					<Value>文字</Value>
 				</Data>
@@ -453,6 +477,10 @@
 					<Value>KeePassを閉じたときにクリップボードの内容を消去します</Value>
 				</Data>
 				<Data>
+					<Name>ClipboardClearTime</Name>
+					<Value>クリップボードを自動的にクリアする時間(秒 メインエントリー一覧)(&amp;C):</Value>
+				</Data>
+				<Data>
 					<Name>ClipboardDataCopied</Name>
 					<Value>データをクリップボードにコピーしました</Value>
 				</Data>
@@ -485,6 +513,10 @@
 					<Value>閉じるボタン([X])ではアプリケーションを終了せずにウインドウを最小化します</Value>
 				</Data>
 				<Data>
+					<Name>CloseDatabase</Name>
+					<Value>データベースを閉じる</Value>
+				</Data>
+				<Data>
 					<Name>ClosingDatabaseFile</Name>
 					<Value>データベースファイルを閉じています</Value>
 				</Data>
@@ -513,6 +545,10 @@
 					<Value>会社</Value>
 				</Data>
 				<Data>
+					<Name>CompareEntries</Name>
+					<Value>エントリーを比較</Value>
+				</Data>
+				<Data>
 					<Name>Comparison</Name>
 					<Value>比較</Value>
 				</Data>
@@ -535,6 +571,30 @@
 				<Data>
 					<Name>ConfigAffectUser</Name>
 					<Value>設定やポリシーの変更はあなたのみに反映されます。ポリシーフラグの変更は管理者によってKeePass再起動後に元に戻されます</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfAdminUac</Name>
+					<Value>設定ファイルへの強制書き込みには、管理者権限が必要な場合があります。必要に応じて、ユーザーアカウント制御ダイアログが表示されます。</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfAllUsers</Name>
+					<Value>設定ファイルの設定は、このKeePassを使用するすべてのユーザに適用されます。</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfChangeValue</Name>
+					<Value>強制されたオプションの値を変更したい場合は、(このダイアログを使って)強制を解除し、(オプションダイアログを使って)値を変更し、{このダイアログを使って)再度強制を解除してください。</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfDialogSubset</Name>
+					<Value>このダイアログは、すべてのオプションのサブセットのみをサポートしています。より多くのオプションを適用するには、XML/テキストエディタを使用して適用される設定ファイルを編集する必要があります</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfEdit</Name>
+					<Value>適用される設定ファイルを編集します</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfSaveItemsAbout</Name>
+					<Value>適用される設定ファイルに項目を保存します</Value>
 				</Data>
 				<Data>
 					<Name>ConfigError</Name>
@@ -581,6 +641,10 @@
 					<Value>新しいデータベースを設定</Value>
 				</Data>
 				<Data>
+					<Name>ConfirmExport</Name>
+					<Value>エクスポートの確認</Value>
+				</Data>
+				<Data>
 					<Name>ConsiderDashesEq</Name>
 					<Value>似たようなダッシュを同一とみなす</Value>
 				</Data>
@@ -605,8 +669,36 @@
 					<Value>全てコピー</Value>
 				</Data>
 				<Data>
+					<Name>CopyEntriesECmd</Name>
+					<Value>エントリーのコピー(暗号化済)(&amp;C)</Value>
+				</Data>
+				<Data>
+					<Name>CopyEntriesUCmd</Name>
+					<Value>エントリーのコピー(復号化済)(&amp;O)</Value>
+				</Data>
+				<Data>
+					<Name>CopyEntryECmd</Name>
+					<Value>エントリーのコピー(暗号化済)(&amp;C)</Value>
+				</Data>
+				<Data>
+					<Name>CopyEntryUCmd</Name>
+					<Value>エントリーのコピー(復号化済)(&amp;O)</Value>
+				</Data>
+				<Data>
+					<Name>CopyHmacOtp</Name>
+					<Value>HMAC-Based OTPをコピー(&amp;H)</Value>
+				</Data>
+				<Data>
+					<Name>CopyInitialPasswordDesc</Name>
+					<Value>ダイアログを開いたときにパスワードをコピーします</Value>
+				</Data>
+				<Data>
 					<Name>CopyLink</Name>
 					<Value>リンクをコピー</Value>
+				</Data>
+				<Data>
+					<Name>CopyNotes</Name>
+					<Value>ノートをコピー(&amp;N)</Value>
 				</Data>
 				<Data>
 					<Name>CopyObject</Name>
@@ -623,6 +715,14 @@
 				<Data>
 					<Name>CopyTanMenu</Name>
 					<Value>TANをコピー(&amp;T)</Value>
+				</Data>
+				<Data>
+					<Name>CopyTimeOtp</Name>
+					<Value>Time-Based OTPをコピー(&amp;I)</Value>
+				</Data>
+				<Data>
+					<Name>CopyTitle</Name>
+					<Value>タイトルをコピー(&amp;T)</Value>
 				</Data>
 				<Data>
 					<Name>CopyUrls</Name>
@@ -701,12 +801,20 @@
 					<Value>「ツール」→「オプション」→「高度」タブで、別のグローバル自動入力ホットキーのキーの組み合わせに変更してください</Value>
 				</Data>
 				<Data>
+					<Name>Current</Name>
+					<Value>現在</Value>
+				</Data>
+				<Data>
 					<Name>CurrentStyle</Name>
 					<Value>現在の形式</Value>
 				</Data>
 				<Data>
 					<Name>Custom</Name>
 					<Value>カスタム</Value>
+				</Data>
+				<Data>
+					<Name>CustomColor</Name>
+					<Value>カスタムカラー</Value>
 				</Data>
 				<Data>
 					<Name>CustomFields</Name>
@@ -731,6 +839,10 @@
 				<Data>
 					<Name>Cut</Name>
 					<Value>カット</Value>
+				</Data>
+				<Data>
+					<Name>Dark</Name>
+					<Value>暗い</Value>
 				</Data>
 				<Data>
 					<Name>Data</Name>
@@ -825,12 +937,20 @@
 					<Value>標準</Value>
 				</Data>
 				<Data>
+					<Name>DefaultColor</Name>
+					<Value>標準色</Value>
+				</Data>
+				<Data>
 					<Name>Delete</Name>
 					<Value>削除</Value>
 				</Data>
 				<Data>
 					<Name>DeleteCmd</Name>
 					<Value>削除(&amp;D)</Value>
+				</Data>
+				<Data>
+					<Name>DeleteEntriesCmd</Name>
+					<Value>エントリーを削除(&amp;D)</Value>
 				</Data>
 				<Data>
 					<Name>DeleteEntriesQuestion</Name>
@@ -841,12 +961,8 @@
 					<Value>本当に選択されたエントリーを全て削除しますか?</Value>
 				</Data>
 				<Data>
-					<Name>DeleteEntriesTitle</Name>
-					<Value>エントリーの削除</Value>
-				</Data>
-				<Data>
-					<Name>DeleteEntriesTitleSingle</Name>
-					<Value>エントリーの削除</Value>
+					<Name>DeleteEntryCmd</Name>
+					<Value>エントリーを削除(&amp;D)</Value>
 				</Data>
 				<Data>
 					<Name>DeleteGroupInfo</Name>
@@ -877,8 +993,12 @@
 					<Value>詳細</Value>
 				</Data>
 				<Data>
+					<Name>Dialog</Name>
+					<Value>ダイアログ</Value>
+				</Data>
+				<Data>
 					<Name>DialogNoShowAgain</Name>
-					<Value>このダイアログは再表示できません</Value>
+					<Value>このダイアログを再度表示しない</Value>
 				</Data>
 				<Data>
 					<Name>Dialogs</Name>
@@ -913,6 +1033,14 @@
 					<Value>データをクリップボードにコピーした後、ウインドウをバックグラウンドに移動</Value>
 				</Data>
 				<Data>
+					<Name>DuplicateEntriesCmd</Name>
+					<Value>エントリーを複製(&amp;I)...</Value>
+				</Data>
+				<Data>
+					<Name>DuplicateEntryCmd</Name>
+					<Value>エントリーを複製(&amp;I)...</Value>
+				</Data>
+				<Data>
 					<Name>DuplicatePasswords</Name>
 					<Value>パスワードが重複</Value>
 				</Data>
@@ -933,24 +1061,28 @@
 					<Value>指定された文字列フィールド名は既に存在します。他のエントリーと重複しないフィールド名を指定してください</Value>
 				</Data>
 				<Data>
-					<Name>EditCmd</Name>
-					<Value>編集(&amp;E)</Value>
-				</Data>
-				<Data>
-					<Name>EditEntries</Name>
-					<Value>エントリーの編集</Value>
+					<Name>EditEntriesCmd</Name>
+					<Value>エントリーを編集(&amp;E)...</Value>
 				</Data>
 				<Data>
 					<Name>EditEntriesDesc</Name>
 					<Value>現在選択されたエントリーの編集</Value>
 				</Data>
 				<Data>
-					<Name>EditEntry</Name>
-					<Value>エントリーの編集</Value>
+					<Name>EditEntriesQuickCmd</Name>
+					<Value>エントリーのクイック編集(&amp;Q)</Value>
+				</Data>
+				<Data>
+					<Name>EditEntryCmd</Name>
+					<Value>エントリーを編集(&amp;E)...</Value>
 				</Data>
 				<Data>
 					<Name>EditEntryDesc</Name>
 					<Value>既存のパスワードエントリーを編集します</Value>
+				</Data>
+				<Data>
+					<Name>EditEntryQuickCmd</Name>
+					<Value>エントリーのクイック編集(&amp;Q)</Value>
 				</Data>
 				<Data>
 					<Name>EditGroup</Name>
@@ -1037,6 +1169,14 @@
 					<Value>で終わる</Value>
 				</Data>
 				<Data>
+					<Name>Enforce</Name>
+					<Value>強制</Value>
+				</Data>
+				<Data>
+					<Name>EnforceOptions</Name>
+					<Value>強制オプション</Value>
+				</Data>
+				<Data>
 					<Name>EnterCompositeKey</Name>
 					<Value>マスターキーの入力</Value>
 				</Data>
@@ -1055,6 +1195,10 @@
 				<Data>
 					<Name>Entry</Name>
 					<Value>エントリー</Value>
+				</Data>
+				<Data>
+					<Name>EntryDifferences</Name>
+					<Value>2つのエントリーの違い</Value>
 				</Data>
 				<Data>
 					<Name>EntryList</Name>
@@ -1117,6 +1261,10 @@
 					<Value>有効期限切れのエントリーも一致</Value>
 				</Data>
 				<Data>
+					<Name>ExpiryDefaultDays</Name>
+					<Value>新しいエントリーの有効期限の規定値を以下の日数にする(&amp;N):</Value>
+				</Data>
+				<Data>
 					<Name>ExpiryTime</Name>
 					<Value>終了日時</Value>
 				</Data>
@@ -1127,6 +1275,14 @@
 				<Data>
 					<Name>Export</Name>
 					<Value>エクスポート</Value>
+				</Data>
+				<Data>
+					<Name>ExportEntriesCmd</Name>
+					<Value>エントリーをエクスポート(&amp;E)...</Value>
+				</Data>
+				<Data>
+					<Name>ExportEntryCmd</Name>
+					<Value>エントリーをエクスポート(&amp;E)...</Value>
 				</Data>
 				<Data>
 					<Name>ExportFileDesc</Name>
@@ -1369,6 +1525,10 @@
 					<Value>エントリを検索</Value>
 				</Data>
 				<Data>
+					<Name>FixByReinstall</Name>
+					<Value>この問題を解決するためには、KeePassを再インストールすることをお勧めします</Value>
+				</Data>
+				<Data>
 					<Name>FocusQuickFindOnRestore</Name>
 					<Value>タスクバーから復元した際にクイック検索ボックスにフォーカスを移動する</Value>
 				</Data>
@@ -1395,6 +1555,10 @@
 				<Data>
 					<Name>ForceSystemFontUnix</Name>
 					<Value>強制的にシステムフォントを使用(Unixのみ)</Value>
+				</Data>
+				<Data>
+					<Name>ForegroundColor</Name>
+					<Value>前景色</Value>
 				</Data>
 				<Data>
 					<Name>Format</Name>
@@ -1441,8 +1605,8 @@
 					<Value>生成するパスワードの個数:</Value>
 				</Data>
 				<Data>
-					<Name>GeneratedPasswordSamples</Name>
-					<Value>生成されたパスワードの例</Value>
+					<Name>GeneratedPasswords</Name>
+					<Value>生成されたパスワード</Value>
 				</Data>
 				<Data>
 					<Name>GeneratePassword</Name>
@@ -1485,6 +1649,10 @@
 					<Value>1 グループをスキップ</Value>
 				</Data>
 				<Data>
+					<Name>HelpPlh</Name>
+					<Value>ヘルプ:  {PARAM} プレースホルダー(&amp;H)</Value>
+				</Data>
+				<Data>
 					<Name>HelpSourceNoLocalOption</Name>
 					<Value>ローカルヘルプが無いため、このオプションは無効です</Value>
 				</Data>
@@ -1521,6 +1689,10 @@
 					<Value>履歴</Value>
 				</Data>
 				<Data>
+					<Name>HistoryBased</Name>
+					<Value>履歴に基づく</Value>
+				</Data>
+				<Data>
 					<Name>Homebanking</Name>
 					<Value>ホームバンキング</Value>
 				</Data>
@@ -1547,6 +1719,10 @@
 				<Data>
 					<Name>Id</Name>
 					<Value>ID</Value>
+				</Data>
+				<Data>
+					<Name>IfEmpty</Name>
+					<Value>もし空なら</Value>
 				</Data>
 				<Data>
 					<Name>Ignore</Name>
@@ -1679,6 +1855,18 @@
 				<Data>
 					<Name>Italic</Name>
 					<Value>斜体</Value>
+				</Data>
+				<Data>
+					<Name>ItemsCheckEnable</Name>
+					<Value>これらの項目を使用したい場合は、対応するダイアログを開き、項目(セキュリティ、プライバシー、機能性、互換性など)を確認し、有効にしてください</Value>
+				</Data>
+				<Data>
+					<Name>ItemsDisabled</Name>
+					<Value>以下の項目が無効化されました:</Value>
+				</Data>
+				<Data>
+					<Name>ItemsNoSensitiveEsp</Name>
+					<Value>特に、機密データを含まないもの(セキュリティ/プライバシーの観点から)</Value>
 				</Data>
 				<Data>
 					<Name>Iterations</Name>
@@ -1841,6 +2029,18 @@
 					<Value>選択されたキープロバイダを使用したい場合は、「ツール」→「オプション」タブの「セキュリティ」を無効にしてください</Value>
 				</Data>
 				<Data>
+					<Name>KeyTransformDefaultsQ</Name>
+					<Value>現在のデフォルト値(推奨値)に設定しますか?</Value>
+				</Data>
+				<Data>
+					<Name>KeyTransformWeak</Name>
+					<Value>データベースのキー変換設定が弱いです</Value>
+				</Data>
+				<Data>
+					<Name>KeyTransformWeakWarning</Name>
+					<Value>キーの変換設定が弱い場合に警告を表示する</Value>
+				</Data>
+				<Data>
 					<Name>LanguageSelected</Name>
 					<Value>選択された言語を有効にしました。選択された言語を読み込むためにKeePassを再起動する必要があります</Value>
 				</Data>
@@ -1877,6 +2077,10 @@
 					<Value>最新のKeePassバージョンは、KeePassのウェブサイトにあります</Value>
 				</Data>
 				<Data>
+					<Name>Light</Name>
+					<Value>明るい</Value>
+				</Data>
+				<Data>
 					<Name>LimitSingleInstance</Name>
 					<Value>複数起動しない</Value>
 				</Data>
@@ -1899,6 +2103,14 @@
 				<Data>
 					<Name>LngInAppDirQ</Name>
 					<Value>アプリケーションディレクトリを開きますか(言語ファイルを移動または削除するため)?</Value>
+				</Data>
+				<Data>
+					<Name>LockAfterGlobalTime</Name>
+					<Value>ユーザの操作が以下の秒数無かったらワークスペースをロック(&amp;O)</Value>
+				</Data>
+				<Data>
+					<Name>LockAfterTime</Name>
+					<Value>KeePass非アクティブ後以下の秒数経ったらワークスペースをロック(&amp;L)</Value>
 				</Data>
 				<Data>
 					<Name>Locked</Name>
@@ -2069,6 +2281,10 @@
 					<Value>最小化時に格納</Value>
 				</Data>
 				<Data>
+					<Name>Modified</Name>
+					<Value>変更済み</Value>
+				</Data>
+				<Data>
 					<Name>More</Name>
 					<Value>もっと</Value>
 				</Data>
@@ -2087,6 +2303,38 @@
 				<Data>
 					<Name>MoveDown</Name>
 					<Value>下に移動</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntriesBottomCmd</Name>
+					<Value>エントリーを末尾に移動(&amp;B)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntriesDownCmd</Name>
+					<Value>エントリーを下に移動(&amp;D)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntriesTopCmd</Name>
+					<Value>エントリーを先頭に移動(&amp;T)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntriesUpCmd</Name>
+					<Value>エントリーを上に移動(&amp;U)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntryBottomCmd</Name>
+					<Value>エントリーを末尾に移動(&amp;B)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntryDownCmd</Name>
+					<Value>エントリーを下に移動(&amp;D)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntryTopCmd</Name>
+					<Value>エントリーを先頭に移動(&amp;T)</Value>
+				</Data>
+				<Data>
+					<Name>MoveEntryUpCmd</Name>
+					<Value>エントリーを上に移動(&amp;U)</Value>
 				</Data>
 				<Data>
 					<Name>MoveToPreviousParentGroup</Name>
@@ -2127,6 +2375,10 @@
 				<Data>
 					<Name>NewDatabase</Name>
 					<Value>新しいデータベース</Value>
+				</Data>
+				<Data>
+					<Name>Newer</Name>
+					<Value>新しい</Value>
 				</Data>
 				<Data>
 					<Name>NewerNetRequired</Name>
@@ -2233,6 +2485,10 @@
 					<Value>OK</Value>
 				</Data>
 				<Data>
+					<Name>Older</Name>
+					<Value>古い</Value>
+				</Data>
+				<Data>
 					<Name>OldFormat</Name>
 					<Value>旧フォーマット</Value>
 				</Data>
@@ -2297,8 +2553,28 @@
 					<Value>全体的なKeePassの設定を変更します</Value>
 				</Data>
 				<Data>
+					<Name>OrEarlier</Name>
+					<Value>またはそれ以前</Value>
+				</Data>
+				<Data>
 					<Name>OtherPlaceholders</Name>
 					<Value>その他のプレースフォルダ</Value>
+				</Data>
+				<Data>
+					<Name>OtpAuthUri</Name>
+					<Value>otpauth:// URI</Value>
+				</Data>
+				<Data>
+					<Name>OtpGenSettings</Name>
+					<Value>OTP生成器の設定</Value>
+				</Data>
+				<Data>
+					<Name>OtpGenSettingsDesc</Name>
+					<Value>エントリーのワンタイムパスワード(OTP)生成器の設定</Value>
+				</Data>
+				<Data>
+					<Name>OtpUsage</Name>
+					<Value>ワンタイムパスワードは、メインウィンドウのコマンドを使用するか、 {PARAM} プレースホルダーを使用して生成することができます</Value>
 				</Data>
 				<Data>
 					<Name>OverridesBuiltIn</Name>
@@ -2387,6 +2663,14 @@
 				<Data>
 					<Name>Paste</Name>
 					<Value>貼付</Value>
+				</Data>
+				<Data>
+					<Name>PasteEntriesCmd</Name>
+					<Value>エントリーを貼付(&amp;P)</Value>
+				</Data>
+				<Data>
+					<Name>PasteEntryCmd</Name>
+					<Value>エントリーを貼付(&amp;P)</Value>
 				</Data>
 				<Data>
 					<Name>Path</Name>
@@ -2481,6 +2765,10 @@
 					<Value>適切なバージョンをプラグインのウエブサイトから探す</Value>
 				</Data>
 				<Data>
+					<Name>Policy</Name>
+					<Value>ポリソー</Value>
+				</Data>
+				<Data>
 					<Name>PolicyAutoTypeDesc</Name>
 					<Value>他のウインドウへの自動入力エントリーを許可する</Value>
 				</Data>
@@ -2565,6 +2853,14 @@
 					<Value>パスワードエントリーを印刷します</Value>
 				</Data>
 				<Data>
+					<Name>PrintEntriesCmd</Name>
+					<Value>エントリーを印刷(&amp;R)...</Value>
+				</Data>
+				<Data>
+					<Name>PrintEntryCmd</Name>
+					<Value>エントリーを印刷(&amp;R)...</Value>
+				</Data>
+				<Data>
 					<Name>Private</Name>
 					<Value>プライベート</Value>
 				</Data>
@@ -2593,8 +2889,16 @@
 					<Value>新しいプロファイルの名前を入力するか、上書きしたい既存のプロファイルを選択してください</Value>
 				</Data>
 				<Data>
+					<Name>Properties</Name>
+					<Value>プロパティ</Value>
+				</Data>
+				<Data>
 					<Name>PwGenOpen</Name>
 					<Value>パスワード生成ツールを開く...</Value>
+				</Data>
+				<Data>
+					<Name>PwGenProfiles</Name>
+					<Value>パスワード生成プロファイル</Value>
 				</Data>
 				<Data>
 					<Name>Quality</Name>
@@ -2603,6 +2907,10 @@
 				<Data>
 					<Name>QualityCheckToggle</Name>
 					<Value>このエントリの品質評価を有効/無効にする(ここで、パスワードの品質レポートで、...)</Value>
+				</Data>
+				<Data>
+					<Name>QualityEstimation</Name>
+					<Value>品質評価</Value>
 				</Data>
 				<Data>
 					<Name>Quick</Name>
@@ -2757,6 +3065,10 @@
 					<Value>保存</Value>
 				</Data>
 				<Data>
+					<Name>SaveAllDatabases</Name>
+					<Value>全てのデータベースを保存</Value>
+				</Data>
+				<Data>
 					<Name>SaveBeforeCloseEntry</Name>
 					<Value>このエントリへの変更を保存しますか?</Value>
 				</Data>
@@ -2785,8 +3097,16 @@
 					<Value>保存されたデータベースファイル</Value>
 				</Data>
 				<Data>
+					<Name>SaveFilesTo</Name>
+					<Value>添付ファイルを保存</Value>
+				</Data>
+				<Data>
 					<Name>SaveForceSync</Name>
 					<Value>同期化上書きの問い合わせをしない。常に同期します</Value>
+				</Data>
+				<Data>
+					<Name>SaveObjectAs</Name>
+					<Value>{PARAM} として保存</Value>
 				</Data>
 				<Data>
 					<Name>SavingDatabase</Name>
@@ -2889,6 +3209,10 @@
 					<Value>他のグループを選択してください</Value>
 				</Data>
 				<Data>
+					<Name>Selected</Name>
+					<Value>選択済</Value>
+				</Data>
+				<Data>
 					<Name>SelectedColumn</Name>
 					<Value>選択された列</Value>
 				</Data>
@@ -2903,6 +3227,10 @@
 				<Data>
 					<Name>SelectFile</Name>
 					<Value>ファイルを選択してください</Value>
+				</Data>
+				<Data>
+					<Name>SelectFont</Name>
+					<Value>フォントを選択してください</Value>
 				</Data>
 				<Data>
 					<Name>SelectIcon</Name>
@@ -2961,6 +3289,10 @@
 					<Value>タイトルバーにフルパスを表示(もしくはファイル名のみ)</Value>
 				</Data>
 				<Data>
+					<Name>ShowHmacOtp</Name>
+					<Value>HMAC-Based OTPを表示(&amp;M)</Value>
+				</Data>
+				<Data>
 					<Name>ShowIn</Name>
 					<Value>表示</Value>
 				</Data>
@@ -2971,6 +3303,10 @@
 				<Data>
 					<Name>ShowMore</Name>
 					<Value>さらに表示</Value>
+				</Data>
+				<Data>
+					<Name>ShowTimeOtp</Name>
+					<Value>Time-Based OTPを表示(&amp;E)</Value>
 				</Data>
 				<Data>
 					<Name>ShowWithFileManager</Name>
@@ -3189,18 +3525,6 @@
 					<Value>アスタリスクを使ってパスワードを表示/隠す</Value>
 				</Data>
 				<Data>
-					<Name>ToolBarNew</Name>
-					<Value>新規...</Value>
-				</Data>
-				<Data>
-					<Name>ToolBarOpen</Name>
-					<Value>開く...</Value>
-				</Data>
-				<Data>
-					<Name>ToolBarSaveAll</Name>
-					<Value>全て保存</Value>
-				</Data>
-				<Data>
 					<Name>TooManyFilesError</Name>
 					<Value>非常に多くのファイルを選択しました。小さなグループを選択して現在の処理を数回繰り返してください</Value>
 				</Data>
@@ -3315,6 +3639,10 @@
 				<Data>
 					<Name>Unknown</Name>
 					<Value>不明</Value>
+				</Data>
+				<Data>
+					<Name>Unsaved</Name>
+					<Value>未保存</Value>
 				</Data>
 				<Data>
 					<Name>UnsupportedByMono</Name>
@@ -3958,11 +4286,11 @@
 				</Data>
 				<Data>
 					<Name>m_menuGroupClipCopy</Name>
-					<Value>グループをコピー(&amp;C)(暗号化)...</Value>
+					<Value>グループをコピー(暗号化済)(&amp;C)</Value>
 				</Data>
 				<Data>
 					<Name>m_menuGroupClipCopyPlain</Name>
-					<Value>グループをコピー(&amp;O)(暗号化なし)...</Value>
+					<Value>グループをコピー(復号化済)(&amp;O)</Value>
 				</Data>
 				<Data>
 					<Name>m_menuGroupClipPaste</Name>
@@ -3997,16 +4325,12 @@
 					<Value>コピー(&amp;C)</Value>
 				</Data>
 				<Data>
-					<Name>m_menuEntryCopyString</Name>
-					<Value>フィールドをコピー(&amp;C)</Value>
+					<Name>m_menuEntryOtherData</Name>
+					<Value>その他のデータ(&amp;O)</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryAttachments</Name>
 					<Value>添付(&amp;M)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntrySaveAttachedFiles</Name>
-					<Value>添付ファイルを保存(&amp;F)...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryPerformAutoType</Name>
@@ -4019,14 +4343,6 @@
 				<Data>
 					<Name>m_menuEntryAdd</Name>
 					<Value>エントリーの追加(&amp;A)...</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryEdit</Name>
-					<Value>エントリーの編集(&amp;E)...</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryEditQuick</Name>
-					<Value>エントリーのクイック編集(&amp;Q)</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryIcon</Name>
@@ -4081,12 +4397,8 @@
 					<Value>期限: 無期限(&amp;N)</Value>
 				</Data>
 				<Data>
-					<Name>m_menuEntryDuplicate</Name>
-					<Value>エントリーを複製(&amp;I)...</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryDelete</Name>
-					<Value>エントリーを削除(&amp;D)</Value>
+					<Name>m_menuEntryOtpGenSettings</Name>
+					<Value>OTP生成器の設定(&amp;O)...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntrySelectAll</Name>
@@ -4097,48 +4409,28 @@
 					<Value>並べ替え(&amp;R)</Value>
 				</Data>
 				<Data>
-					<Name>m_menuEntryMoveToTop</Name>
-					<Value>エントリーを先頭へ(&amp;T)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryMoveOneUp</Name>
-					<Value>エントリーを上へ(&amp;U)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryMoveOneDown</Name>
-					<Value>エントリーを下へ(&amp;D)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryMoveToBottom</Name>
-					<Value>エントリーを末尾へ(&amp;B)</Value>
-				</Data>
-				<Data>
 					<Name>m_menuEntryMoveToGroup</Name>
 					<Value>グループに移動(&amp;G)</Value>
 				</Data>
 				<Data>
+					<Name>m_menuEntryCompare</Name>
+					<Value>比較(&amp;C)</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompare2</Name>
+					<Value>エントリーを比較(&amp;C)...</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompareMark</Name>
+					<Value>比較するためにエントリーをマーク(&amp;M)</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompare1</Name>
+					<Value>マークしたエントリーと比較(&amp;O)...</Value>
+				</Data>
+				<Data>
 					<Name>m_menuEntryDX</Name>
 					<Value>データの交換(&amp;X)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryClipCopy</Name>
-					<Value>エントリーのコピー(暗号化済)(&amp;C)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryClipCopyPlain</Name>
-					<Value>エントリーのコピー(復号化済)(&amp;U)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryClipPaste</Name>
-					<Value>エントリーを貼付(&amp;P)</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryPrint</Name>
-					<Value>エントリーを印刷(&amp;R)...</Value>
-				</Data>
-				<Data>
-					<Name>m_menuEntryExport</Name>
-					<Value>エントリーをエクスポート(&amp;E)...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuFind</Name>
@@ -4206,11 +4498,15 @@
 				</Data>
 				<Data>
 					<Name>m_menuFindExpInF</Name>
-					<Value>将来(&amp;F)</Value>
+					<Value>無期限(&amp;F)</Value>
 				</Data>
 				<Data>
 					<Name>m_menuFindLastMod</Name>
 					<Value>最近に更新したエントリ(&amp;M)...</Value>
+				</Data>
+				<Data>
+					<Name>m_menuFindHistory</Name>
+					<Value>履歴(&amp;H)...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuFindLarge</Name>
@@ -4341,6 +4637,10 @@
 					<Value>印刷したバックアップからキーファイルを再作成(&amp;R)...</Value>
 				</Data>
 				<Data>
+					<Name>m_menuToolsOptionsEnf</Name>
+					<Value>強制オプション(&amp;E)...</Value>
+				</Data>
+				<Data>
 					<Name>m_menuToolsTriggers</Name>
 					<Value>トリガー(&amp;R)...</Value>
 				</Data>
@@ -4424,6 +4724,10 @@
 					<Value>ヘルプ(&amp;H)</Value>
 				</Data>
 				<Data>
+					<Name>m_ctxToolsCopyInitialPassword</Name>
+					<Value>初期パスワードのコピー</Value>
+				</Data>
+				<Data>
 					<Name>m_ctxToolsUrlHelp</Name>
 					<Value>URLフィールド:ヘルプ(&amp;U)</Value>
 				</Data>
@@ -4458,6 +4762,10 @@
 				<Data>
 					<Name>m_ctxToolsFieldRefsInNotes</Name>
 					<Value>備考フィールドへ(&amp;O)</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxToolsOtpGen</Name>
+					<Value>OTP生成器の設定(&amp;O)...</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -4538,6 +4846,10 @@
 				<Data>
 					<Name>m_ctxStrMoveToNotes</Name>
 					<Value>ノート(&amp;N)</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrOtpGen</Name>
+					<Value>OTP生成器の設定(&amp;O)...</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -4734,12 +5046,6 @@
 					<Text>オプション(&amp;O)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblText" BaseHash="v1:KwGa">
-					<Layout />
-				</Control>
-				<Control Name="m_lvItems" BaseHash="v1:JBA0">
-					<Layout />
-				</Control>
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.CharPickerForm">
@@ -4866,7 +5172,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbEnc" BaseHash="v1:iN3e">
-					<Layout X="50%c" />
+					<Layout X="28%c" />
 				</Control>
 				<Control Name="m_cmbFieldFormat" BaseHash="v1:sysh">
 					<Layout />
@@ -5135,24 +5441,16 @@
 					<Text>テンプレート</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblCompressionIntro" BaseHash="v1:1r8s">
-					<Text>データ圧縮はデータベースのサイズを減らします</Text>
+				<Control Name="m_lblCmpGZip" BaseHash="v1:BUwM">
+					<Text>適度な圧縮、非常に優れた性能</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblCpGZipCp" BaseHash="v1:8zyo">
-					<Text>程々</Text>
+				<Control Name="m_lblCmpIntro" BaseHash="v1:zoUq">
+					<Text>データ圧縮により、データベースのファイルサイズを小さくすることができます</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblCpGZipPerf" BaseHash="v1:Ks+B">
-					<Text>とてもよい</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_lblCpNoneCp" BaseHash="v1:7+rz">
-					<Text>無圧縮</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_lblCpNonePerf" BaseHash="v1:meW8">
-					<Text>程々</Text>
+				<Control Name="m_lblCmpNone" BaseHash="v1:gfLt">
+					<Text>圧縮なし、中程度のパフォーマンス(より多くのファイルI/O)</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblDbDesc" BaseHash="v1:frYR">
@@ -5173,18 +5471,6 @@
 				</Control>
 				<Control Name="m_lblEntryTemplatesGroup" BaseHash="v1:Pqou">
 					<Text>エントリーテンプレートグループ(&amp;E):</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_lblHeaderCp" BaseHash="v1:os0H">
-					<Text>圧縮</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_lblHeaderCpAlgo" BaseHash="v1:Xvf7">
-					<Text>アルゴリズム</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_lblHeaderPerf" BaseHash="v1:edNl">
-					<Text>性能</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblKdf" BaseHash="v1:i9S6">
@@ -5251,12 +5537,12 @@
 				<Control Name="m_pbKdf" BaseHash="v1:3OI6">
 					<Layout />
 				</Control>
-				<Control Name="m_rbGZip" BaseHash="v1:wMrw">
+				<Control Name="m_rbCmpGZip" BaseHash="v1:G785">
 					<Text>&amp;GZip</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rbNone" BaseHash="v1:pc34">
-					<Text>&amp;None</Text>
+				<Control Name="m_rbCmpNone" BaseHash="v1:QZbM">
+					<Text>なし(&amp;N)</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabAdvanced" BaseHash="v1:KaZu">
@@ -5297,21 +5583,13 @@
 			<Window Name="" BaseHash="v1:F+AL">
 				<Layout />
 			</Window>
-			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:eWtF">
-					<Layout />
-				</Control>
-			</ChildControls>
+			<ChildControls />
 		</Form>
 		<Form FullName="KeePass.Forms.DataViewerForm">
 			<Window Name="" BaseHash="v1:F+AL">
 				<Layout />
 			</Window>
-			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:cvat">
-					<Layout />
-				</Control>
-			</ChildControls>
+			<ChildControls />
 		</Form>
 		<Form FullName="KeePass.Forms.DuplicationForm">
 			<Window Name="" BaseHash="v1:85Zx">
@@ -5742,8 +6020,8 @@
 				<Control Name="m_cmbName" BaseHash="v1:bbyl">
 					<Layout />
 				</Control>
-				<Control Name="m_lblIDIntro" BaseHash="v1:Dg2H">
-					<Text>文字列フィールドは名前と値からなります。文字列フィールドの名前はフィールドを表す一般的な文字列です(ユーザ名、クレジットカード番号...)。名前は固有にする必要があります。例えばエントリーに2つの「URL」という名前のフィールドを持つことはできません</Text>
+				<Control Name="m_lblIDIntro" BaseHash="v1:4+Vn">
+					<Text>文字列フィールドは名前と値からなります。フィールドの名前はフィールドを表す一般的な文字列です(「BIC」,「郵便番号」, ...)。エントリー内で固有にする必要があります。例えばエントリーに2つの「URL」という名前のフィールドを持つことはできません</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblSeparator" BaseHash="v1:h4Xc">
@@ -6083,6 +6361,9 @@
 					<Text>&amp;UUID:</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_linkTagsInh" BaseHash="v1:W+4t">
+					<Layout />
+				</Control>
 				<Control Name="m_lvCustomData" BaseHash="v1:v57a">
 					<Layout />
 				</Control>
@@ -6260,6 +6541,21 @@
 					<Text>「新しい場合は上書き」を選んでもデータベースのインポートの際に削除される場合があります。インポートされたデータベースのエントリーが削除されていた場合、現在開いているデータベースのエントリーも削除されます</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_radioCreateNew" BaseHash="v1:mbIX">
+					<Layout />
+				</Control>
+				<Control Name="m_radioKeepExisting" BaseHash="v1:kSgW">
+					<Layout />
+				</Control>
+				<Control Name="m_radioOverwrite" BaseHash="v1:kwBY">
+					<Layout />
+				</Control>
+				<Control Name="m_radioOverwriteIfNewer" BaseHash="v1:i3AX">
+					<Layout />
+				</Control>
+				<Control Name="m_radioSynchronize" BaseHash="v1:PTHl">
+					<Layout />
+				</Control>
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.InternalBrowserForm">
@@ -6390,8 +6686,8 @@
 					<Text>品質の評価:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblIntro" BaseHash="v1:kG7x">
-					<Text>データベースの暗号化に使用するマスターキーを指定します</Text>
+				<Control Name="m_lblIntro" BaseHash="v1:ff7O">
+					<Text>データベースの暗号化に使用する新しいマスターキーを指定します</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblKeyFileInfo" BaseHash="v1:dPM8">
@@ -6580,10 +6876,10 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_lblInfo" BaseHash="v1:zbjb">
+				<Control Name="m_lblInfo" BaseHash="v1:YOjU">
 					<Layout />
 				</Control>
-				<Control Name="m_lvMain" BaseHash="v1:laBW">
+				<Control Name="m_lvMain" BaseHash="v1:XIRE">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6593,13 +6889,42 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_lvEntries" BaseHash="v1:SxmQ">
-					<Layout />
-				</Control>
-				<Control Name="m_richEntryView" BaseHash="v1:wscW">
-					<Layout />
-				</Control>
 				<Control Name="m_tabMain" BaseHash="v1:cv/j">
+					<Layout />
+				</Control>
+			</ChildControls>
+		</Form>
+		<Form FullName="KeePass.Forms.OptionsEnfForm">
+			<Window Name="" BaseHash="v1:xrNz">
+				<Layout />
+			</Window>
+			<ChildControls>
+				<Control Name="m_btnCancel" BaseHash="v1:NLm8">
+					<Text>キャンセル</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnOK" BaseHash="v1:cIrA">
+					<Text>OK</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblEnforce" BaseHash="v1:yKuC">
+					<Layout />
+				</Control>
+				<Control Name="m_lblInfo" BaseHash="v1:vzVe">
+					<Layout />
+				</Control>
+				<Control Name="m_lnkConfigEnf" BaseHash="v1:X4DK">
+					<Layout />
+				</Control>
+				<Control Name="m_lnkEnfAll" BaseHash="v1:vYrt">
+					<Text>全て</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lnkEnfNone" BaseHash="v1:LjbX">
+					<Text>なし</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lvMain" BaseHash="v1:JTHO">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6610,11 +6935,11 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:Utmh">
-					<Text>キャンセル</Text>
+				<Control Name="m_btnAltColor" BaseHash="v1:wRTR">
 					<Layout />
 				</Control>
-				<Control Name="m_btnCustomAltColor" BaseHash="v1:pRLq">
+				<Control Name="m_btnCancel" BaseHash="v1:Utmh">
+					<Text>キャンセル</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnFileExtCreate" BaseHash="v1:+Co+">
@@ -6629,8 +6954,14 @@
 					<Text>ヘルプの参照元(&amp;H)...</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_btnListFont" BaseHash="v1:s0V5">
+					<Layout />
+				</Control>
 				<Control Name="m_btnOK" BaseHash="v1:dlqY">
 					<Text>OK</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnPasswordFont" BaseHash="v1:Xgc1">
 					<Layout />
 				</Control>
 				<Control Name="m_btnProxy" BaseHash="v1:TK7z">
@@ -6641,65 +6972,76 @@
 					<Text>URLの上書き(&amp;O)...</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnSelFont" BaseHash="v1:3VRo">
-					<Text>一覧のフォントを選択(&amp;L)</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_btnSelPwFont" BaseHash="v1:i6fw">
-					<Text>パスワードのフォントを選択(&amp;P)</Text>
-					<Layout />
-				</Control>
 				<Control Name="m_cbAutoRun" BaseHash="v1:OiUo">
 					<Text>ウインドウズの開始時にKeePassを実行(現在のユーザ)(&amp;U)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbClipClearTime" BaseHash="v1:LMgi">
-					<Text>クリップボードを自動的にクリアする時間(秒)(&amp;C):</Text>
+				<Control Name="m_cbClipClearTime" BaseHash="v1:GvcR">
 					<Layout />
 				</Control>
-				<Control Name="m_cbCustomAltColor" BaseHash="v1:CUgg">
-					<Text>1行おきに色を変更(&amp;C):</Text>
+				<Control Name="m_cbDefaultExpireDays" BaseHash="v1:LwQd">
 					<Layout />
 				</Control>
-				<Control Name="m_cbDefaultExpireDays" BaseHash="v1:U9AG">
-					<Text>新しいエントリーの有効期限の規定値を以下の日数にする(&amp;N):</Text>
+				<Control Name="m_cbListFont" BaseHash="v1:imfv">
+					<Text>一覧のフォントをカスタム(&amp;L):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbLockAfterGlobalTime" BaseHash="v1:zR9e">
-					<Text>ユーザの操作が以下の秒数無かったらワークスペースをロック(&amp;O):</Text>
+				<Control Name="m_cbLockAfterGlobalTime" BaseHash="v1:IGee">
 					<Layout />
 				</Control>
-				<Control Name="m_cbLockAfterTime" BaseHash="v1:58dB">
-					<Text>KeePass非アクティブ後以下の秒数経ったらワークスペースをロック(&amp;L):</Text>
+				<Control Name="m_cbLockAfterTime" BaseHash="v1:As6Y">
 					<Layout />
 				</Control>
-				<Control Name="m_cmbBannerStyle" BaseHash="v1:M/6x">
+				<Control Name="m_cbPasswordFont" BaseHash="v1:ob8c">
+					<Text>パスワードのフォントをカスタム(&amp;P):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cmbEscAction" BaseHash="v1:NHDt">
+				<Control Name="m_cmbAltColor" BaseHash="v1:dJAs">
 					<Layout />
 				</Control>
-				<Control Name="m_cmbMenuStyle" BaseHash="v1:0HcV">
+				<Control Name="m_cmbBannerStyle" BaseHash="v1:6vU+">
+					<Layout />
+				</Control>
+				<Control Name="m_cmbEscAction" BaseHash="v1:0bjN">
+					<Layout />
+				</Control>
+				<Control Name="m_cmbMenuStyle" BaseHash="v1:0bjN">
 					<Layout />
 				</Control>
 				<Control Name="m_grpFileExt" BaseHash="v1:GeQ/">
 					<Text>KDBXファイル関連付け</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_grpFonts" BaseHash="v1:v7LP">
+					<Text>フォント</Text>
+					<Layout />
+				</Control>
 				<Control Name="m_grpHotKeys" BaseHash="v1:wKfQ">
 					<Text>システム全体で有効なホットキー</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_hkAutoType" BaseHash="v1:Ebvb">
+				<Control Name="m_grpIntAdv" BaseHash="v1:SXXG">
+					<Text>高度</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_hkAutoTypePassword" BaseHash="v1:zEO7">
+				<Control Name="m_grpStyles" BaseHash="v1:euLJ">
+					<Text>スタイルとカラー</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_hkAutoTypeSelected" BaseHash="v1:2+tb">
+				<Control Name="m_hkAutoType" BaseHash="v1:MphN">
 					<Layout />
 				</Control>
-				<Control Name="m_hkShowWindow" BaseHash="v1:DMgL">
+				<Control Name="m_hkAutoTypePassword" BaseHash="v1:ENxr">
+					<Layout />
+				</Control>
+				<Control Name="m_hkAutoTypeSelected" BaseHash="v1:HVY0">
+					<Layout />
+				</Control>
+				<Control Name="m_hkShowWindow" BaseHash="v1:8AJY">
+					<Layout />
+				</Control>
+				<Control Name="m_lblAltColor" BaseHash="v1:qpMv">
+					<Text>背景色を1行ごとに変える(&amp;A):</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblAutoType" BaseHash="v1:pUrC">
@@ -6714,23 +7056,23 @@
 					<Text>選択されたエントリーを自動入力:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblBannerStyle" BaseHash="v1:wjID">
-					<Text>ダイアログバナーの形式(&amp;D):</Text>
+				<Control Name="m_lblBannerStyle" BaseHash="v1:Y66S">
+					<Text>ダイアログバナーのスタイル(&amp;D):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEscAction" BaseHash="v1:WFyy">
-					<Text>メインウインドウでESCキー押下(&amp;E):</Text>
+				<Control Name="m_lblEscAction" BaseHash="v1:dgFr">
+					<Text>メインウィンドウを閉じたときの動作(&amp;E)</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblFileExtHint" BaseHash="v1:k84L">
 					<Text>KDBXファイルをKeePassと関連付けします。エクスプローラーでKDBXファイルをダブルクリックするとKeePassで開きます</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblMenuStyle" BaseHash="v1:Xl2X">
+				<Control Name="m_lblMenuStyle" BaseHash="v1:EJA9">
 					<Text>メニューとツールバーのスタイル(&amp;M):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblMruCount" BaseHash="v1:tYQi">
+				<Control Name="m_lblMruCount" BaseHash="v1:fW8y">
 					<Text>最近使用したファイルの保存数(&amp;R):</Text>
 					<Layout />
 				</Control>
@@ -6754,8 +7096,12 @@
 					<Text>KeePassのウインドウを表示</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_linkHotKeyHelp" BaseHash="v1:Xaiz">
-					<Text>ヘルプ: システム全体で有効なホットキーを作成</Text>
+				<Control Name="m_linkHotKeyHelp" BaseHash="v1:ZLCq">
+					<Text>システム全体で有効なホットキーを作成</Text>
+					<Layout X="-6%c" />
+				</Control>
+				<Control Name="m_linkMainFont" BaseHash="v1:fq8z">
+					<Text>メインフォント (サイズ)</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_linkPolicyInfo" BaseHash="v1:/Tcr">
@@ -6770,10 +7116,14 @@
 					<Text>上級者向け</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_linkTheme" BaseHash="v1:LGMN">
+					<Text>ダークテーマ</Text>
+					<Layout />
+				</Control>
 				<Control Name="m_lvAdvanced" BaseHash="v1:lAkw">
 					<Layout />
 				</Control>
-				<Control Name="m_lvGuiOptions" BaseHash="v1:vtVE">
+				<Control Name="m_lvGuiOptions" BaseHash="v1:1RLT">
 					<Layout />
 				</Control>
 				<Control Name="m_lvPolicy" BaseHash="v1:mCcx">
@@ -6794,15 +7144,19 @@
 				<Control Name="m_numLockAfterTime" BaseHash="v1:NF4P">
 					<Layout />
 				</Control>
-				<Control Name="m_numMruCount" BaseHash="v1:EQ0p">
+				<Control Name="m_numMruCount" BaseHash="v1:MCsH">
 					<Layout />
 				</Control>
 				<Control Name="m_tabAdvanced" BaseHash="v1:IIve">
 					<Text>高度</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabGui" BaseHash="v1:DA0B">
-					<Text>インターフェース</Text>
+				<Control Name="m_tabGui1" BaseHash="v1:ICps">
+					<Text>インターフェース (1)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_tabGui2" BaseHash="v1:yMFq">
+					<Text>インターフェース (2)</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabIntegration" BaseHash="v1:GkZ7">
@@ -6812,12 +7166,124 @@
 				<Control Name="m_tabMain" BaseHash="v1:8lwO">
 					<Layout />
 				</Control>
-				<Control Name="m_tabPolicy" BaseHash="v1:gFcu">
-					<Text>ポリシー</Text>
-					<Layout />
-				</Control>
 				<Control Name="m_tabSecurity" BaseHash="v1:hMLK">
 					<Text>セキュリティ</Text>
+					<Layout />
+				</Control>
+			</ChildControls>
+		</Form>
+		<Form FullName="KeePass.Forms.OtpGeneratorForm">
+			<Window Name="" BaseHash="v1:eWkE">
+				<Layout />
+			</Window>
+			<ChildControls>
+				<Control Name="m_btnCancel" BaseHash="v1:anHX">
+					<Text>キャンセル</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnImportOtpAuthUri" BaseHash="v1:I6Mg">
+					<Text>'otpauth://' URIをインポート(&amp;I)...</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnOK" BaseHash="v1:ieLw">
+					<Text>OK</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_cmbHotpSecretEnc" BaseHash="v1:MLMS">
+					<Layout />
+				</Control>
+				<Control Name="m_cmbTotpAlg" BaseHash="v1:qZIZ">
+					<Layout />
+				</Control>
+				<Control Name="m_cmbTotpSecretEnc" BaseHash="v1:MLMS">
+					<Layout />
+				</Control>
+				<Control Name="m_lblHotpCounter" BaseHash="v1:anF2">
+					<Text>カウンター(&amp;C):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblHotpCounterDefault" BaseHash="v1:7sAa">
+					<Layout />
+				</Control>
+				<Control Name="m_lblHotpPreview" BaseHash="v1:TkDc">
+					<Text>プレビュー:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblHotpPreviewValue" BaseHash="v1:f86v">
+					<Layout />
+				</Control>
+				<Control Name="m_lblHotpSecret" BaseHash="v1:NfcY">
+					<Text>共有秘密鍵(&amp;S):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblHotpUsage" BaseHash="v1:x7f8">
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpAlg" BaseHash="v1:M2tx">
+					<Text>アルゴリズム(&amp;A):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpAlgDefault" BaseHash="v1:EbqB">
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpLength" BaseHash="v1:OmMV">
+					<Text>長さ(桁)(&amp;L):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpLengthDefault" BaseHash="v1:7sAa">
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpPeriod" BaseHash="v1:HhrP">
+					<Text>有効期限(秒)(&amp;P):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpPeriodDefault" BaseHash="v1:/Vio">
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpPreview" BaseHash="v1:TkDc">
+					<Text>プレビュー:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpPreviewValue" BaseHash="v1:f86v">
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpSecret" BaseHash="v1:NfcY">
+					<Text> 共有秘密鍵(&amp;S):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblTotpUsage" BaseHash="v1:x7f8">
+					<Layout />
+				</Control>
+				<Control Name="m_lnkHotpPlh" BaseHash="v1:rqG5">
+					<Layout />
+				</Control>
+				<Control Name="m_lnkTotpPlh" BaseHash="v1:rqG5">
+					<Layout />
+				</Control>
+				<Control Name="m_tabHotp" BaseHash="v1:odhe">
+					<Text>HMAC-Based (HOTP)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_tabMain" BaseHash="v1:44ZZ">
+					<Layout />
+				</Control>
+				<Control Name="m_tabTotp" BaseHash="v1:HpOV">
+					<Text>Time-Based (TOTP)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_tbHotpCounter" BaseHash="v1:+bwu">
+					<Layout />
+				</Control>
+				<Control Name="m_tbHotpSecret" BaseHash="v1:+hCC">
+					<Layout />
+				</Control>
+				<Control Name="m_tbTotpLength" BaseHash="v1:+bwu">
+					<Layout />
+				</Control>
+				<Control Name="m_tbTotpPeriod" BaseHash="v1:r9W/">
+					<Layout />
+				</Control>
+				<Control Name="m_tbTotpSecret" BaseHash="v1:+hCC">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6877,12 +7343,30 @@
 					<Text>キャンセル</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_btnColorPD" BaseHash="v1:WAtn">
+					<Layout />
+				</Control>
+				<Control Name="m_btnColorPL" BaseHash="v1:QJ4F">
+					<Layout />
+				</Control>
+				<Control Name="m_btnColorPO" BaseHash="v1:r4cI">
+					<Layout />
+				</Control>
+				<Control Name="m_btnColorPU" BaseHash="v1:1bIz">
+					<Layout />
+				</Control>
 				<Control Name="m_btnConfigPrinter" BaseHash="v1:0KTj">
 					<Text>ページ設定(&amp;S)</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_btnMainFont" BaseHash="v1:6u1U">
+					<Layout />
+				</Control>
 				<Control Name="m_btnOK" BaseHash="v1:G9OK">
 					<Text>印刷(&amp;P)...</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnPasswordFont" BaseHash="v1:XJL3">
 					<Layout />
 				</Control>
 				<Control Name="m_btnPrintPreview" BaseHash="v1:WCgc">
@@ -6891,6 +7375,10 @@
 				</Control>
 				<Control Name="m_cbAutoType" BaseHash="v1:K2wb">
 					<Text>自動入力(&amp;E)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_cbColorP" BaseHash="v1:Xsd2">
+					<Text>パスワードの文字に色をつける(&amp;Z):</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cbCreation" BaseHash="v1:wqms">
@@ -6917,8 +7405,8 @@
 					<Text>最終更新日時(&amp;M)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbMonospaceForPasswords" BaseHash="v1:WXcL">
-					<Text>monospaceフォントをパスワードに使う</Text>
+				<Control Name="m_cbMainFont" BaseHash="v1:lrZn">
+					<Text>メインフォントをカスタム:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cbNotes" BaseHash="v1:Ok2N">
@@ -6929,8 +7417,8 @@
 					<Text>パスワード(&amp;W)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbSmallMono" BaseHash="v1:D8yn">
-					<Text>特別に小さいmonospaceフォントを使う</Text>
+				<Control Name="m_cbPasswordFont" BaseHash="v1:kkW/">
+					<Text>パスワードフォントをカスタム:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cbTags" BaseHash="v1:ku5T">
@@ -6949,85 +7437,85 @@
 					<Text>ユーザー名(&amp;U)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbUuid" BaseHash="v1:01HQ">
-					<Text>UUID</Text>
+				<Control Name="m_cbUuid" BaseHash="v1:vJzH">
+					<Text>UUI&amp;D</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cmbSortEntries" BaseHash="v1:0aUH">
+				<Control Name="m_cmbSortEntries" BaseHash="v1:pPb8">
 					<Layout />
 				</Control>
-				<Control Name="m_cmbSpr" BaseHash="v1:WZ/V">
+				<Control Name="m_cmbSpr" BaseHash="v1:pPb8">
 					<Layout />
 				</Control>
-				<Control Name="m_grpFields" BaseHash="v1:qRAM">
+				<Control Name="m_grpAdv" BaseHash="v1:fpQY">
+					<Text>高度</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_grpFields" BaseHash="v1:Ccj4">
 					<Text>フィールド</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_grpFont" BaseHash="v1:kIiv">
-					<Text>フォント</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_grpLayout" BaseHash="v1:8FGx">
+				<Control Name="m_grpLayout" BaseHash="v1:f85r">
 					<Text>配置</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_grpOptions" BaseHash="v1:iniB">
-					<Text>オプション</Text>
+				<Control Name="m_grpSorting" BaseHash="v1:1/hr">
+					<Text>並び順</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_grpSorting" BaseHash="v1:4U1B">
-					<Text>並べ替え</Text>
+				<Control Name="m_grpStyle" BaseHash="v1:3PXx">
+					<Text>スタイル</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblDetailsInfo" BaseHash="v1:D1qh">
-					<Text>ブロック内のエントリーを並べ替えてください。選択された以下のフィールトは印刷されます</Text>
+				<Control Name="m_lblColorPD" BaseHash="v1:KxwO">
 					<Layout />
 				</Control>
-				<Control Name="m_lblEntrySortHint" BaseHash="v1:kUgq">
-					<Text>エントリーはグループごとに並べ替えられます。(グループ内のエントリーはバラバラになりません)</Text>
+				<Control Name="m_lblColorPL" BaseHash="v1:Y+Rj">
+					<Layout />
+				</Control>
+				<Control Name="m_lblColorPO" BaseHash="v1:xr5k">
+					<Layout />
+				</Control>
+				<Control Name="m_lblColorPU" BaseHash="v1:GEMs">
+					<Layout />
+				</Control>
+				<Control Name="m_lblEntrySortHint" BaseHash="v1:HdA5">
+					<Text>エントリーはグループでソートされます(グループ構造は分解されません)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblLayBlocks" BaseHash="v1:gl9A">
+					<Text>入力フィールドをブロック形式で配置する。各項目は1行またはそれ以上です。</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblLayTable" BaseHash="v1:OEKX">
+					<Text>入力フィールドを表形式で並べる。各フィールドに1列です。</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblPreviewHint" BaseHash="v1:PDQi">
 					<Text>注:このプレビューは配置の確認用です。印刷内容を見るには「プレビュー」ボタンを押してください</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSortEntries" BaseHash="v1:rpAA">
+				<Control Name="m_lblSortEntries" BaseHash="v1:HvJ0">
 					<Text>フィールドで並べ替え(&amp;O):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSpr" BaseHash="v1:aEgD">
-					<Text>プレースホルダ(&amp;H):</Text>
+				<Control Name="m_lblSpr" BaseHash="v1:OXFd">
+					<Text>プレースホルダー(&amp;H):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblTabularInfo" BaseHash="v1:/IQ9">
-					<Text>エントリーをタブフォーム内で並べ替えてください。各エントリーは1行に配置されます。選択されたフィールドは(自動入力設定を除き)印刷されます</Text>
+				<Control Name="m_linkDeselectAllFields" BaseHash="v1:8BJd">
+					<Text>全て選択解除</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_linkDeselectAllFields" BaseHash="v1:a9KR">
-					<Text>全て非選択</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_linkSelectAllFields" BaseHash="v1:FR5U">
+				<Control Name="m_linkSelectAllFields" BaseHash="v1:GYKz">
 					<Text>全て選択</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rbDetails" BaseHash="v1:GnJg">
-					<Text>詳細(&amp;D)</Text>
+				<Control Name="m_rbLayBlocks" BaseHash="v1:Q5g9">
+					<Text>ブロック(&amp;K)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rbMonospace" BaseHash="v1:6YTJ">
-					<Text>Monospace</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_rbSansSerif" BaseHash="v1:iur4">
-					<Text>Sans-Serif</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_rbSerif" BaseHash="v1:JHp+">
-					<Text>Se&amp;rif</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_rbTabular" BaseHash="v1:jts7">
+				<Control Name="m_rbLayTable" BaseHash="v1:Wl60">
 					<Text>表(&amp;B)</Text>
 					<Layout />
 				</Control>
@@ -7178,7 +7666,11 @@
 				<Control Name="m_btnGenPw" BaseHash="v1:oNQU">
 					<Layout />
 				</Control>
-				<Control Name="m_btnHistoryDelete" BaseHash="v1:JBeA">
+				<Control Name="m_btnHistoryCompare" BaseHash="v1:KJed">
+					<Text>比較(&amp;C)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnHistoryDelete" BaseHash="v1:LG+D">
 					<Text>削除(&amp;D)</Text>
 					<Layout />
 				</Control>
@@ -7253,6 +7745,9 @@
 					<Text>***</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_cbQualityCheck" BaseHash="v1:/Uhw">
+					<Layout />
+				</Control>
 				<Control Name="m_cmbOverrideUrl" BaseHash="v1:nySS">
 					<Layout />
 				</Control>
@@ -7271,7 +7766,7 @@
 					<Text>作成日:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblCreatedData" BaseHash="v1:D+0Y">
+				<Control Name="m_lblCreatedData" BaseHash="v1:UwHp">
 					<Layout />
 				</Control>
 				<Control Name="m_lblCustomAutoType" BaseHash="v1:9IUH">
@@ -7284,13 +7779,13 @@
 				</Control>
 				<Control Name="m_lblIcon" BaseHash="v1:kRiw">
 					<Text>アイコン(&amp;I):</Text>
-					<Layout X="-2%c" />
+					<Layout X="-5%c" />
 				</Control>
 				<Control Name="m_lblModified" BaseHash="v1:/59r">
 					<Text>更新日:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblModifiedData" BaseHash="v1:uCUa">
+				<Control Name="m_lblModifiedData" BaseHash="v1:nQW5">
 					<Layout />
 				</Control>
 				<Control Name="m_lblNotes" BaseHash="v1:9usE">
@@ -7305,12 +7800,15 @@
 					<Text>パスワード(&amp;P):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblPasswordRepeat" BaseHash="v1:QmkM">
-					<Text>もう1度(&amp;R):</Text>
+				<Control Name="m_lblPasswordModified" BaseHash="v1:Gcih">
+					<Text>パスワード変更日:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblPrev" BaseHash="v1:9zZc">
-					<Text>以前のバージョン(&amp;P):</Text>
+				<Control Name="m_lblPasswordModifiedData" BaseHash="v1:tc1d">
+					<Layout />
+				</Control>
+				<Control Name="m_lblPasswordRepeat" BaseHash="v1:QmkM">
+					<Text>もう1度(&amp;R):</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblQuality" BaseHash="v1:mplI">
@@ -7344,8 +7842,15 @@
 					<Text>&amp;UUID:</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_lblVersions" BaseHash="v1:8jFj">
+					<Text>過去のバージョン(&amp;E):</Text>
+					<Layout />
+				</Control>
 				<Control Name="m_linkAutoTypeObfuscation" BaseHash="v1:7ksO">
 					<Text>これは何?</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_linkTagsInh" BaseHash="v1:Vepr">
 					<Layout />
 				</Control>
 				<Control Name="m_lvAutoType" BaseHash="v1:YVFK">
@@ -7357,7 +7862,7 @@
 				<Control Name="m_lvCustomData" BaseHash="v1:bgmV">
 					<Layout />
 				</Control>
-				<Control Name="m_lvHistory" BaseHash="v1:ZhVb">
+				<Control Name="m_lvHistory" BaseHash="v1:zQx3">
 					<Layout />
 				</Control>
 				<Control Name="m_lvStrings" BaseHash="v1:IQKt">
@@ -7413,7 +7918,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tbTitle" BaseHash="v1:tYYX">
-					<Layout />
+					<Layout Width="-5%c" />
 				</Control>
 				<Control Name="m_tbUrl" BaseHash="v1:pANp">
 					<Layout />
@@ -7447,10 +7952,13 @@
 					<Text>OK</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnProfileAdd" BaseHash="v1:Ngle">
+				<Control Name="m_btnProfileAdd" BaseHash="v1:KHTx">
 					<Layout />
 				</Control>
-				<Control Name="m_btnProfileRemove" BaseHash="v1:tkr+">
+				<Control Name="m_btnProfileEnforce" BaseHash="v1:tkr+">
+					<Layout />
+				</Control>
+				<Control Name="m_btnProfileRemove" BaseHash="v1:Eifd">
 					<Layout />
 				</Control>
 				<Control Name="m_cbBrackets" BaseHash="v1:Zk+D">
@@ -7508,8 +8016,8 @@
 				<Control Name="m_cmbCustomAlgo" BaseHash="v1:kk39">
 					<Layout />
 				</Control>
-				<Control Name="m_cmbProfiles" BaseHash="v1:cLn5">
-					<Layout X="32%c" Width="-4%c" />
+				<Control Name="m_cmbProfiles" BaseHash="v1:AeWJ">
+					<Layout X="44%c" Width="-8%c" />
 				</Control>
 				<Control Name="m_grpCurOpt" BaseHash="v1:4Po0">
 					<Text>現在の設定</Text>
