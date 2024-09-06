@@ -2,7 +2,7 @@
 <Translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.55</ApplicationVersion>
+		<ApplicationVersion>2.57</ApplicationVersion>
 		<NameEnglish>Japanese</NameEnglish>
 		<NameNative>日本語</NameNative>
 		<Iso6391Code>ja</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>Kazuhiro Kato</AuthorName>
 		<AuthorContact>kato-k@ksysllc.co.jp</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>0F738A6AADB8634EAE4101CB78ADA498</FileUuid>
-		<LastModified>2024-01-30 17:30:23Z</LastModified>
+		<FileUuid>6D736D07F0D13C48A8E57260E33D73EB</FileUuid>
+		<LastModified>2024-09-06 17:12:04Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -1276,8 +1276,9 @@
 					<Name>Export</Name>
 					<Value>エクスポート</Value>
 				</Data>
-				<Data Name="ExportCmd">
-					<Value>&amp;Export...</Value>
+				<Data>
+					<Name>ExportCmd</Name>
+					<Value>エクスポート(&amp;E)...</Value>
 				</Data>
 				<Data>
 					<Name>ExportEntriesCmd</Name>
@@ -2543,11 +2544,13 @@
 					<Name>OptimizeForScreenReader</Name>
 					<Value>画面読取装置に最適化(画面読取装置を使用している場合のみ有効にしてください)</Value>
 				</Data>
-				<Data Name="OptionActivateAboutTo">
-					<Value>You are about to activate the following option:</Value>
+				<Data>
+					<Name>OptionActivateAboutTo</Name>
+					<Value>以下のオプションを有効にしようとしています:</Value>
 				</Data>
-				<Data Name="OptionActivateConfirm">
-					<Value>Are you sure you want to activate the option?</Value>
+				<Data>
+					<Name>OptionActivateConfirm</Name>
+					<Value>本当にこのオプションを有効にしますか?</Value>
 				</Data>
 				<Data>
 					<Name>OptionReqOn</Name>
@@ -2775,7 +2778,7 @@
 				</Data>
 				<Data>
 					<Name>Policy</Name>
-					<Value>ポリソー</Value>
+					<Value>ポリシー</Value>
 				</Data>
 				<Data>
 					<Name>PolicyAutoTypeDesc</Name>
@@ -2853,11 +2856,13 @@
 					<Name>PreReleaseVersion</Name>
 					<Value>リリース前バージョン</Value>
 				</Data>
-				<Data Name="PreventScreenCapture">
-					<Value>Prevent certain screen captures</Value>
+				<Data>
+					<Name>PreventScreenCapture</Name>
+					<Value>スクリーンキャプチャを防ぐ</Value>
 				</Data>
-				<Data Name="PreventScreenCaptureNote">
-					<Value>This may also prevent legitimate other software (remote desktop solutions, accessibility tools such as screen magnifiers, etc.) from seeing KeePass windows.</Value>
+				<Data>
+					<Name>PreventScreenCaptureNote</Name>
+					<Value>また、正規の他のソフトウェア (リモートデスクトップソリューション、画面拡大鏡などのアクセシビリティツールなど)からKeePassウィンドウが見えないようにすることもできます</Value>
 				</Data>
 				<Data>
 					<Name>Print</Name>
@@ -3015,8 +3020,9 @@
 					<Name>RemoteHostReachable</Name>
 					<Value>リモートホストは到達可能です(ping)</Value>
 				</Data>
-				<Data Name="RenameCmd">
-					<Value>&amp;Rename...</Value>
+				<Data>
+					<Name>RenameCmd</Name>
+					<Value>リネーム(&amp;R)...</Value>
 				</Data>
 				<Data>
 					<Name>RepairCmd</Name>
@@ -3530,8 +3536,9 @@
 					<Name>Title</Name>
 					<Value>タイトル</Value>
 				</Data>
-				<Data Name="TlsCertsAcceptInvalid">
-					<Value>Accept invalid TLS/SSL certificates (self-signed, expired, ...)</Value>
+				<Data>
+					<Name>TlsCertsAcceptInvalid</Name>
+					<Value>無効なSSL証明書(自己署名、期限切れ...)を受け入れる</Value>
 				</Data>
 				<Data>
 					<Name>Toggle</Name>
@@ -4910,6 +4917,18 @@
 				</Data>
 			</Strings>
 		</StringTable>
+		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxHst">
+			<Strings>
+				<Data>
+					<Name>m_ctxHstSelectAll</Name>
+					<Value />
+				</Data>
+				<Data>
+					<Name>m_ctxHstDeleteAll</Name>
+					<Value />
+				</Data>
+			</Strings>
+		</StringTable>
 		<StringTable Name="KeePass.Forms.DataEditorForm.m_menuMain">
 			<Strings>
 				<Data>
@@ -5100,7 +5119,7 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.ColumnsForm">
-			<Window Name="" BaseHash="v1:vhG/">
+			<Window Name="" BaseHash="v1:N1bW">
 				<Layout />
 			</Window>
 			<ChildControls>
@@ -5116,19 +5135,23 @@
 					<Text>使用しているデータをアスタリスクで隠す(&amp;H)</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_cbRmbHidingPasswords" BaseHash="v1:BOuK">
+					<Text>パスワード非表示設定を記憶(&amp;R)</Text>
+					<Layout />
+				</Control>
 				<Control Name="m_lblChoose" BaseHash="v1:es59">
 					<Text>メインウインドウで表示する列を選択(&amp;C):</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblReorderHint" BaseHash="v1:7Qx2">
-					<Text>列を並べ替えるにはメインウインドウの列ヘッダをドラッグ&amp;&amp;ドロップします</Text>
+				<Control Name="m_lblReorderHint" BaseHash="v1:nYjn">
+					<Text>列の順序を並べ替えるには、メインウィンドウの列ヘッダーをドラッグ＆ドロップします</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSortHint" BaseHash="v1:cxEV">
-					<Text>エントリーをフィールドを並べ替えるには、メインウインドウの該当する列ヘッダをクリックします</Text>
+				<Control Name="m_lblSortHint" BaseHash="v1:rxOX">
+					<Text>エントリーをフィールド別にを並べ替えるには、メインウインドウの該当する列ヘッダーをクリックします</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lvColumns" BaseHash="v1:A8T7">
+				<Control Name="m_lvColumns" BaseHash="v1:TlTv">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6285,24 +6308,24 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.FileBrowserForm">
-			<Window Name="" BaseHash="v1:g4+I">
+			<Window Name="" BaseHash="v1:XBOe">
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:+Vgy">
+				<Control Name="m_btnCancel" BaseHash="v1:vOou">
 					<Text>キャンセル</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:aCiB">
+				<Control Name="m_btnOK" BaseHash="v1:LX18">
 					<Layout />
 				</Control>
-				<Control Name="m_lblHint" BaseHash="v1:7F5O">
+				<Control Name="m_lblHint" BaseHash="v1:dg4N">
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:tNtk">
+				<Control Name="m_lblSeparator" BaseHash="v1:dcyJ">
 					<Layout />
 				</Control>
-				<Control Name="m_lvFiles" BaseHash="v1:geCh">
+				<Control Name="m_lvFiles" BaseHash="v1:5IKn">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6484,8 +6507,8 @@
 					<Text>削除(&amp;D)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCustomExport" BaseHash="v1:a5aN">
-					<Text>エクスポート(&amp;E)...</Text>
+				<Control Name="m_btnCustomMore" BaseHash="v1:cNy2">
+					<Text>さらに(&amp;M)...</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnOK" BaseHash="v1:Ly6w">
@@ -7185,6 +7208,9 @@
 				</Control>
 				<Control Name="m_tabSecurity" BaseHash="v1:hMLK">
 					<Text>セキュリティ</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_tbSearch" BaseHash="v1:zQZ2">
 					<Layout />
 				</Control>
 			</ChildControls>
