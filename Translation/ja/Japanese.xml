@@ -882,7 +882,7 @@
 				</Data>
 				<Data>
 					<Name>DatabaseModifiedNoDot</Name>
-					<Value>現在のデータベースファイルは変更されています</Value>
+					<Value>データベースは変更されています</Value>
 				</Data>
 				<Data>
 					<Name>DatabaseNamePrompt</Name>
@@ -1275,6 +1275,9 @@
 				<Data>
 					<Name>Export</Name>
 					<Value>エクスポート</Value>
+				</Data>
+				<Data Name="ExportCmd">
+					<Value>&amp;Export...</Value>
 				</Data>
 				<Data>
 					<Name>ExportEntriesCmd</Name>
@@ -2540,6 +2543,12 @@
 					<Name>OptimizeForScreenReader</Name>
 					<Value>画面読取装置に最適化(画面読取装置を使用している場合のみ有効にしてください)</Value>
 				</Data>
+				<Data Name="OptionActivateAboutTo">
+					<Value>You are about to activate the following option:</Value>
+				</Data>
+				<Data Name="OptionActivateConfirm">
+					<Value>Are you sure you want to activate the option?</Value>
+				</Data>
 				<Data>
 					<Name>OptionReqOn</Name>
 					<Value>この操作を行うと以下のオプションがオンになります:</Value>
@@ -2844,6 +2853,12 @@
 					<Name>PreReleaseVersion</Name>
 					<Value>リリース前バージョン</Value>
 				</Data>
+				<Data Name="PreventScreenCapture">
+					<Value>Prevent certain screen captures</Value>
+				</Data>
+				<Data Name="PreventScreenCaptureNote">
+					<Value>This may also prevent legitimate other software (remote desktop solutions, accessibility tools such as screen magnifiers, etc.) from seeing KeePass windows.</Value>
+				</Data>
 				<Data>
 					<Name>Print</Name>
 					<Value>印刷</Value>
@@ -2999,6 +3014,9 @@
 				<Data>
 					<Name>RemoteHostReachable</Name>
 					<Value>リモートホストは到達可能です(ping)</Value>
+				</Data>
+				<Data Name="RenameCmd">
+					<Value>&amp;Rename...</Value>
 				</Data>
 				<Data>
 					<Name>RepairCmd</Name>
@@ -3353,10 +3371,6 @@
 					<Value>特殊キー</Value>
 				</Data>
 				<Data>
-					<Name>SslCertsAcceptInvalid</Name>
-					<Value>不正なSSL証明書(自己署名、期限切れ...)を受け付ける</Value>
-				</Data>
-				<Data>
 					<Name>StandardExpireSelect</Name>
 					<Value>標準の期限を選択してください</Value>
 				</Data>
@@ -3515,6 +3529,9 @@
 				<Data>
 					<Name>Title</Name>
 					<Value>タイトル</Value>
+				</Data>
+				<Data Name="TlsCertsAcceptInvalid">
+					<Value>Accept invalid TLS/SSL certificates (self-signed, expired, ...)</Value>
 				</Data>
 				<Data>
 					<Name>Toggle</Name>
