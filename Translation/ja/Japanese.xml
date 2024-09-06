@@ -10,8 +10,8 @@
 		<AuthorName>Kazuhiro Kato</AuthorName>
 		<AuthorContact>kato-k@ksysllc.co.jp</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>6D736D07F0D13C48A8E57260E33D73EB</FileUuid>
-		<LastModified>2024-09-06 17:12:04Z</LastModified>
+		<FileUuid>087554BAB4FF8547BBF619DDF5BEADB1</FileUuid>
+		<LastModified>2024-09-06 19:21:21Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -882,7 +882,7 @@
 				</Data>
 				<Data>
 					<Name>DatabaseModifiedNoDot</Name>
-					<Value>データベースは変更されています</Value>
+					<Value>現在のデータベースファイルは変更されています</Value>
 				</Data>
 				<Data>
 					<Name>DatabaseNamePrompt</Name>
@@ -4921,11 +4921,11 @@
 			<Strings>
 				<Data>
 					<Name>m_ctxHstSelectAll</Name>
-					<Value />
+					<Value>すべての履歴エントリーを選択(&amp;S)</Value>
 				</Data>
 				<Data>
 					<Name>m_ctxHstDeleteAll</Name>
-					<Value />
+					<Value>すべての履歴エントリーを削除(&amp;D)</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -5212,13 +5212,13 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbEnc" BaseHash="v1:iN3e">
-					<Layout X="28%c" />
+					<Layout X="50%c" />
 				</Control>
 				<Control Name="m_cmbFieldFormat" BaseHash="v1:sysh">
 					<Layout />
 				</Control>
 				<Control Name="m_cmbFieldSep" BaseHash="v1:x1TQ">
-					<Layout X="20%c" />
+					<Layout X="30%c" />
 				</Control>
 				<Control Name="m_cmbFieldType" BaseHash="v1:cjcr">
 					<Layout />
@@ -5227,7 +5227,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbTextQual" BaseHash="v1:5ari">
-					<Layout X="20%c" />
+					<Layout X="30%c" />
 				</Control>
 				<Control Name="m_grpFieldAdd" BaseHash="v1:+VSR">
 					<Text>フィールド追加</Text>
@@ -5447,7 +5447,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbEncAlgo" BaseHash="v1:CcVe">
-					<Layout />
+					<Layout X="+8%c" Width="-8%c" />
 				</Control>
 				<Control Name="m_cmbEntryTemplates" BaseHash="v1:8h6/">
 					<Layout />
@@ -5612,7 +5612,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tbDbName" BaseHash="v1:CDvo">
-					<Layout X="16%c" Width="-4%c" />
+					<Layout X="25%c" Width="-7%c" />
 				</Control>
 				<Control Name="m_tbDefaultUser" BaseHash="v1:xcL2">
 					<Layout X="8%c" Width="-5%c" />
@@ -5995,7 +5995,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbWindow" BaseHash="v1:KvOw">
-					<Layout X="8%c" Width="-1%c" />
+					<Layout X="15%c" Width="-8%c" />
 				</Control>
 				<Control Name="m_lblKeySeqInsertInfo" BaseHash="v1:Pggy">
 					<Text>プレースホルダの挿入(&amp;I):</Text>
@@ -6303,7 +6303,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tbFilter" BaseHash="v1:Mkp+">
-					<Layout X="2%c" Width="-4%c" />
+					<Layout X="5%c" Width="-12%c" />
 				</Control>
 			</ChildControls>
 		</Form>
@@ -6319,6 +6319,10 @@
 				<Control Name="m_btnOK" BaseHash="v1:LX18">
 					<Layout />
 				</Control>
+				<Control Name="m_lblFileName" BaseHash="v1:SAX0">
+					<Text>ファイル名(&amp;N):</Text>
+					<Layout />
+				</Control>
 				<Control Name="m_lblHint" BaseHash="v1:dg4N">
 					<Layout />
 				</Control>
@@ -6326,6 +6330,9 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lvFiles" BaseHash="v1:5IKn">
+					<Layout />
+				</Control>
+				<Control Name="m_tbFileName" BaseHash="v1:yvj6">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -7037,16 +7044,16 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbAltColor" BaseHash="v1:dJAs">
-					<Layout />
+					<Layout X="5%c" Width="-5%c" />
 				</Control>
 				<Control Name="m_cmbBannerStyle" BaseHash="v1:6vU+">
-					<Layout />
+					<Layout X="5%c" Width="-5%c" />
 				</Control>
 				<Control Name="m_cmbEscAction" BaseHash="v1:0bjN">
-					<Layout />
+					<Layout X="15%c" Width="-15%c" />
 				</Control>
 				<Control Name="m_cmbMenuStyle" BaseHash="v1:0bjN">
-					<Layout />
+					<Layout X="5%c" Width="-5%c" />
 				</Control>
 				<Control Name="m_grpFileExt" BaseHash="v1:GeQ/">
 					<Text>KDBXファイル関連付け</Text>
@@ -7185,7 +7192,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_numMruCount" BaseHash="v1:MCsH">
-					<Layout />
+					<Layout X="15%c" />
 				</Control>
 				<Control Name="m_tabAdvanced" BaseHash="v1:IIve">
 					<Text>高度</Text>
@@ -7607,7 +7614,7 @@
 				</Control>
 				<Control Name="m_lblPort" BaseHash="v1:o1tN">
 					<Text>ポート(&amp;R):</Text>
-					<Layout />
+					<Layout X="-3%c" />
 				</Control>
 				<Control Name="m_lblUser" BaseHash="v1:Q9FQ">
 					<Text>ユーザ名(&amp;U):</Text>
@@ -7638,13 +7645,13 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tbAddress" BaseHash="v1:KLCu">
-					<Layout />
+					<Layout X="5%c" Width="-5%c" />
 				</Control>
 				<Control Name="m_tbPassword" BaseHash="v1:I+XA">
 					<Layout />
 				</Control>
 				<Control Name="m_tbPort" BaseHash="v1:EziF">
-					<Layout X="6%c" Width="-34%c" />
+					<Layout X="3%c" Width="-20%c" />
 				</Control>
 				<Control Name="m_tbUser" BaseHash="v1:CfIp">
 					<Layout />
@@ -7715,6 +7722,10 @@
 				</Control>
 				<Control Name="m_btnHistoryDelete" BaseHash="v1:LG+D">
 					<Text>削除(&amp;D)</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnHistoryMore" BaseHash="v1:wr3/">
+					<Text>さらに(&amp;M)</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnHistoryRestore" BaseHash="v1:AQGR">
@@ -8225,7 +8236,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cmbProfiles" BaseHash="v1:OjIX">
-					<Layout />
+					<Layout X="50%c" Width="-10%c" />
 				</Control>
 				<Control Name="m_grpOptions" BaseHash="v1:FL9a">
 					<Text>オプション</Text>
@@ -8559,11 +8570,11 @@
 				</Control>
 				<Control Name="m_rbInnerXml" BaseHash="v1:OZRb">
 					<Text>内側のXML(&amp;X)</Text>
-					<Layout X="24%c" />
+					<Layout X="32%c" />
 				</Control>
 				<Control Name="m_rbOuterXml" BaseHash="v1:w83s">
 					<Text>外側のXML(&amp;O)</Text>
-					<Layout X="24%c" />
+					<Layout X="30%c" />
 				</Control>
 				<Control Name="m_rbRemove" BaseHash="v1:nKyw">
 					<Text>ノードの削除(&amp;R)</Text>
